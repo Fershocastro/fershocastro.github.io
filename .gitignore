@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# PHP mailer sin usar (nunca se integró, GitHub Pages no ejecuta PHP)
+mailer/
+
+# Slide pesada descartada por ahora (>100MB, GitHub la rechaza)
+assets/images/projects/infotainment/slides.pdf
