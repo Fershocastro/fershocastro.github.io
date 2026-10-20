@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fershocastro | ABInBev</title>
+  <meta name="author" content="Fershocastro">
+  <meta name="description" content="ABInBev case study: Redesign of a sales projection platform.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/tech-case.css">
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <a href="home-tech-v2.html" class="brand">fershocastro<span>_</span></a>
+      <nav>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn-accent btn-sm" href="https://calendly.com/fershocastro" target="_blank">Book a Call <span class="arr">&rsaquo;</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Encabezado del caso ===== -->
+    <section class="case-hero">
+      <div class="wrap">
+        <div class="case-frame">
+          <div class="case-intro">
+            <a class="mono back reveal" href="portfolio-tech.html">&larr; All projects</a>
+            <h1 class="reveal">ABInBev<span class="cursor"></span></h1>
+            <p class="lead reveal">Redesign of a sales projection platform.</p>
+          </div>
+          <div class="case-meta reveal">
+            <dl>
+              <div><dt>Year</dt><dd>2022</dd></div>
+              <div><dt>Timeline</dt><dd>12 weeks · design thinking</dd></div>
+              <div><dt>Scope</dt><dd>Research, IA, pricing planner, UI, testing</dd></div>
+              <div><dt>Tools</dt><dd>Figma, Maze, Adobe Illustrator</dd></div>
+              <div><dt>Categories</dt><dd>Beverage, Analytics, B2B</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Barra compacta (mobile) ===== -->
+    <div class="mbar" aria-hidden="true">
+      <div class="wrap" style="position: relative;">
+        <span class="cur"><b>00</b> / 06 · Summary</span>
+        <button class="to-top" type="button" data-top>&uarr; Top</button>
+        <span class="track"><i></i></span>
+      </div>
+    </div>
+
+    <div class="wrap report">
+
+      <!-- ===== Índice lateral ===== -->
+      <aside class="rail" aria-label="Case study progress">
+        <div class="mono head"><span>UX case report</span><span>06 steps</span></div>
+        <ol>
+          <li><a href="#summary"><b>00</b>Summary<span class="fill"><i></i></span></a></li>
+          <li><a href="#empathize"><b>01</b>Empathize<span class="fill"><i></i></span></a></li>
+          <li><a href="#define"><b>02</b>Define<span class="fill"><i></i></span></a></li>
+          <li><a href="#ideate"><b>03</b>Ideate<span class="fill"><i></i></span></a></li>
+          <li><a href="#prototype"><b>04</b>Before &amp; after<span class="fill"><i></i></span></a></li>
+          <li><a href="#screens"><b>05</b>Final screens<span class="fill"><i></i></span></a></li>
+          <li><a href="#results"><b>06</b>Results<span class="fill"><i></i></span></a></li>
+        </ol>
+        <div class="total">
+          <span class="mono">Read</span>
+          <span class="n">0%</span>
+          <span class="track"><i></i></span>
+        </div>
+        <button class="to-top" type="button" data-top>&uarr; Back to top</button>
+      </aside>
+
+      <article>
+
+        <!-- ===== 00 Summary ===== -->
+        <section class="r-sec" id="summary" data-step="00" data-name="Summary">
+          <div class="r-head"><span class="mono">00 · Executive summary</span><span class="mono">12 weeks</span></div>
+          <p class="tldr reveal">RGM 3.0, a <em>pricing and sales projection platform</em> that replaced an Excel file full of macros, so ABInBev teams can simulate how each beer brand performs across Latin America.</p>
+
+          <div class="stats reveal" style="--n: 4;">
+            <div class="stat"><div class="n">12<em>wk</em></div><p>From research to final screens</p></div>
+            <div class="stat"><div class="n">90<em>%</em></div><p>Struggled with key tasks in the old system</p></div>
+            <div class="stat"><div class="n">82<em>%</em></div><p>Saw the old system as a productivity barrier</p></div>
+            <div class="stat"><div class="n">79<em>%</em></div><p>Felt frustrated by the macro-based tool</p></div>
+          </div>
+
+          <div class="pao reveal">
+            <div><span class="mono">Problem</span><p>Projections lived in an Excel spreadsheet with macros: many fields, little clarity, and a poor experience.</p></div>
+            <div><span class="mono">Approach</span><p>Design thinking with two testing rounds, plus three weekly meetings with the ABInBev team.</p></div>
+            <div><span class="mono">Outcome</span><p>A web platform split into plan creation and history, with a step-by-step planner and clear results.</p></div>
+          </div>
+
+          <div class="viz reveal" style="margin-top: 24px;">
+            <div class="mono cap"><span>Roadmap · twelve weeks, testing twice</span><span>Fig. A</span></div>
+            <div class="mgantt" style="grid-template-columns: repeat(12, 1fr);">
+              <span class="m" style="grid-column: span 3;">W1–3</span><span class="m" style="grid-column: span 3;">W4–6</span><span class="m" style="grid-column: span 3;">W7–9</span><span class="m" style="grid-column: span 3;">W10–12</span>
+              <span class="b now" style="grid-column: 1 / 4;">Empathize</span>
+              <span class="b" style="grid-column: 3 / 6;">Define</span>
+              <span class="b" style="grid-column: 4 / 8;">Ideate</span>
+              <span class="b" style="grid-column: 5 / 7;">Test 1</span>
+              <span class="b" style="grid-column: 6 / 11;">Prototype</span>
+              <span class="b" style="grid-column: 8 / 13;">Test 2</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== 01 Empathize ===== -->
+        <section class="r-sec" id="empathize" data-step="01" data-name="Empathize">
+          <div class="r-head"><span class="mono">Step 01 / 05</span><span class="mono">Weeks 1–3</span></div>
+          <div class="r-title"><span class="num">01</span><h2>Empathize</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Understand why the Excel tool was so hard to use.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Observations and interviews</strong> with the teams who build projections every day.</span></li>
+                <li><span><strong>Found</strong> that the macro-based system was suboptimal, unclear, and complex to operate.</span></li>
+                <li><span><strong>Turned findings into three solutions</strong> for the new platform.</span></li>
+              </ul>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>Research findings</span><span>Fig. B</span></div>
+              <div class="bars" style="--n: 3;">
+                <div class="bar"><span class="v">90%</span><span class="col"><i style="--v: 90%"></i></span><span class="l">Struggled with key tasks</span></div>
+                <div class="bar"><span class="v">82%</span><span class="col"><i style="--v: 82%"></i></span><span class="l">Productivity barrier</span></div>
+                <div class="bar"><span class="v">79%</span><span class="col"><i style="--v: 79%"></i></span><span class="l">Frustrated</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cells c3 reveal" style="margin-top: 24px;">
+            <div class="cell"><span class="idx">SOLUTION 01</span><h4>A simpler interface</h4><p>Clear and intuitive, to reduce errors, validated through usability testing.</p></div>
+            <div class="cell"><span class="idx">SOLUTION 02</span><h4>Projection generation</h4><p>Easy, accurate sales projections across regions.</p></div>
+            <div class="cell tint"><span class="idx">SOLUTION 03</span><h4>Data visualization</h4><p>Custom views to analyze data with specific criteria.</p></div>
+          </div>
+        </section>
+
+        <!-- ===== 02 Define ===== -->
+        <section class="r-sec" id="define" data-step="02" data-name="Define">
+          <div class="r-head"><span class="mono">Step 02 / 05</span><span class="mono">Weeks 3–5</span></div>
+          <div class="r-title"><span class="num">02</span><h2>Define</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Design for specialized teams and country-level executives in Latin America.</p>
+
+          <div class="personas reveal" style="grid-template-columns: 1fr 1fr;">
+            <div class="persona"><div class="who"><span class="av">MR</span><div><b>María Rivero, 38</b>Executive · Colombia</div></div><dl><div><dt>Pain</dt><dd>Slow, error-prone Excel projections; hard to track brands across countries.</dd></div><div><dt>Goal</dt><dd>A simple projection tool, real-time data, and easy sharing with regional managers.</dd></div></dl></div>
+            <div class="persona"><div class="who"><span class="av">CS</span><div><b>Carlos Souza, 45</b>Regional manager · Brazil</div></div><dl><div><dt>Pain</dt><dd>No standard tool; manual data aggregation; no clear visualizations.</dd></div><div><dt>Goal</dt><dd>Automated aggregation and clear charts for data-driven decisions.</dd></div></dl></div>
+          </div>
+
+          <div class="reveal" style="margin-top: 24px;">
+            <span class="mono r-sub">User journey · building a pricing plan</span>
+            <div class="journey">
+              <div class="journey-in" style="--n: 5;">
+                <div class="rh">Stage</div><div class="st">Create plan</div><div class="st">Market dynamics</div><div class="st">Constraints</div><div class="st">Market share</div><div class="st">Scenario result</div>
+                <div class="rh">Emotion</div>
+                <div class="emo"><div class="lvl"><i style="--e: 60%"></i></div><b>Anticipation</b></div>
+                <div class="emo"><div class="lvl"><i style="--e: 25%"></i></div><b>Confused</b></div>
+                <div class="emo"><div class="lvl"><i style="--e: 40%"></i></div><b>Thoughtful</b></div>
+                <div class="emo"><div class="lvl"><i style="--e: 15%"></i></div><b>Tense</b></div>
+                <div class="emo"><div class="lvl"><i style="--e: 90%"></i></div><b>Satisfied</b></div>
+                <div class="rh">Pain point</div><div>Complex tags and plan types; unsure about historical data</div><div>Hard to track changing distribution and financial data</div><div>Budget constraints; supply chain concerns</div><div>Stress over competition; anxious choosing brands</div><div>No way to share or download the scenario</div>
+                <div class="rh">Opportunity</div><div>Guidance for objectives; access to market data</div><div>Real-time trends and emerging opportunities</div><div>Constraint tools with dropdowns and labels</div><div>More details about selected brands</div><div>Charts with the main KPIs for executives</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== 03 Ideate ===== -->
+        <section class="r-sec" id="ideate" data-step="03" data-name="Ideate">
+          <div class="r-head"><span class="mono">Step 03 / 05</span><span class="mono">Weeks 4–7</span></div>
+          <div class="r-title"><span class="num">03</span><h2>Ideate</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Co-create with the ABInBev team and turn a spreadsheet into a guided flow.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">Creative workshops</span>
+              <ul class="did">
+                <li><span><strong>Three weekly meetings</strong> to track progress and communicate with the ABInBev team.</span></li>
+                <li><span><strong>Creative sessions</strong> to draft wireframes together.</span></li>
+                <li><span><strong>Architecture review</strong> with developers on the stack and integrations.</span></li>
+              </ul>
+            </div>
+            <figure class="shot reveal">
+              <img src="assets/images/projects/abinbev/tech/workshop.png" alt="Remote workshops reviewing the final scenario and the current process" loading="lazy">
+              <figcaption><span>Remote workshops</span><span>Fig. C</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="viz reveal" style="margin-top: 24px;">
+            <div class="mono cap"><span>Pricing planner · six steps</span><span>Fig. D</span></div>
+            <div class="hflow" style="--n: 6;">
+              <div class="node"><b>Create plan</b><span>Type, name, country, year</span></div>
+              <div class="node"><b>Market dynamics</b><span>Industry, macro, PCC</span></div>
+              <div class="node"><b>Constraints</b><span>Brand-level, min/max price</span></div>
+              <div class="node"><b>Granular PINC</b><span>Total country</span></div>
+              <div class="node"><b>PINC calendar</b><span>Per month</span></div>
+              <div class="node on"><b>Scenario result</b><span>KPIs, share, download</span></div>
+            </div>
+            <div class="chips-row" style="margin-top: 16px;"><span class="mono" style="align-self: center; margin-right: 6px;">Home →</span><span class="chip">World map selection</span><span class="chip">Mini dashboards</span><span class="chip">Historic plans</span><span class="chip">Compare scenarios</span><span class="chip on">Go to Power BI</span></div>
+          </div>
+        </section>
+
+        <!-- ===== 04 Before & after ===== -->
+        <section class="r-sec" id="prototype" data-step="04" data-name="Before &amp; after">
+          <div class="r-head"><span class="mono">Step 04 / 05</span><span class="mono">Weeks 6–10</span></div>
+          <div class="r-title"><span class="num">04</span><h2>Before &amp; after</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Keep the brand, but trade dozens of spreadsheet fields for two clear paths.</p>
+
+          <div class="compare reveal">
+            <div><span class="mono lbl">Before · Excel with macros</span><img src="assets/images/projects/abinbev/tech/before.png" alt="The previous Excel file with macros" loading="lazy" style="border: 1px solid var(--line);"><ul><li>Numerous fields to fill in each form to run a projection.</li></ul></div>
+            <div class="after"><span class="mono lbl">After · RGM 3.0</span><img src="assets/images/projects/abinbev/tech/after.png" alt="New home: create a pricing plan or open historic plans" loading="lazy" style="border: 1px solid var(--line);"><ul><li>Two core paths, plan creation and history, guided by instructions and support content.</li></ul></div>
+          </div>
+          <div class="outputs reveal"><span class="mono">Style</span><span class="chip">#FFFF00</span><span class="chip">#000000</span><span class="chip">#FFD037</span><span class="chip on">Barlow Semi Condensed</span></div>
+        </section>
+
+        <!-- ===== 05 Final screens ===== -->
+        <section class="r-sec" id="screens" data-step="05" data-name="Final screens">
+          <div class="r-head"><span class="mono">Step 05 / 05</span><span class="mono">Weeks 9–12</span></div>
+          <div class="r-title"><span class="num">05</span><h2>Final screens</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Let directors and executives focus on decisions, not spreadsheets.</p>
+
+          <div class="cells c2 reveal">
+            <div class="cell"><span class="idx">BY ZONE</span><h4>Pricing plans by zone</h4><p>Pick a country on the map and plan for it.</p><img src="assets/images/projects/abinbev/tech/map.png" alt="World map selection" loading="lazy" style="border: 1px solid var(--line); margin-top: 8px;"></div>
+            <div class="cell"><span class="idx">GUIDED</span><h4>Seamless projections</h4><p>A step-by-step planner from plan type to results.</p><img src="assets/images/projects/abinbev/tech/planner.png" alt="Pricing planner" loading="lazy" style="border: 1px solid var(--line); margin-top: 8px;"></div>
+            <div class="cell"><span class="idx">DATA</span><h4>Effortless data handling</h4><p>Analyze, download, or share each scenario.</p><img src="assets/images/projects/abinbev/tech/scenario.png" alt="Scenario result with main KPIs" loading="lazy" style="border: 1px solid var(--line); margin-top: 8px;"></div>
+            <div class="cell tint"><span class="idx">REPORTS</span><h4>Real-time analytics</h4><p>Connected to Power BI, and scenarios can be compared.</p><img src="assets/images/projects/abinbev/tech/home.png" alt="RGM 3.0 home" loading="lazy" style="border: 1px solid var(--line); margin-top: 8px;"></div>
+          </div>
+        </section>
+
+        <!-- ===== 06 Results ===== -->
+        <section class="r-sec" id="results" data-step="06" data-name="Results">
+          <div class="r-head"><span class="mono">06 · Results</span><span class="mono">RGM 3.0</span></div>
+          <div class="r-title"><span class="num">06</span><h2>From spreadsheet to platform</h2></div>
+          <p class="r-goal"><span class="mono">Outcome</span>Projections became a guided process, with results executives can read, share, and compare.</p>
+
+          <div class="cells c3 reveal">
+            <div class="cell"><span class="idx">CLARITY</span><h4>Two clear paths</h4><p>Plan creation and history replace a maze of spreadsheet tabs.</p></div>
+            <div class="cell"><span class="idx">GUIDANCE</span><h4>Six guided steps</h4><p>Instructions and support content at every stage.</p></div>
+            <div class="cell tint"><span class="idx">INSIGHT</span><h4>KPIs up front</h4><p>Volume, market share, revenue, and MACO at a glance.</p></div>
+          </div>
+
+          <div class="reveal" style="margin-top: 32px;">
+            <span class="mono r-sub">Evidence</span>
+            <div class="evidence">
+              <figure><img src="assets/images/projects/abinbev/tech/hero.png" alt="Global pricing planner" loading="lazy"><figcaption>Pricing planner</figcaption></figure>
+              <figure><img src="assets/images/projects/abinbev/tech/home.png" alt="Home" loading="lazy"><figcaption>Home</figcaption></figure>
+              <figure><img src="assets/images/projects/abinbev/tech/scenario.png" alt="Scenario result" loading="lazy"><figcaption>Scenario result</figcaption></figure>
+              <figure><img src="assets/images/projects/abinbev/tech/workshop.png" alt="Workshops" loading="lazy"><figcaption>Workshops</figcaption></figure>
+            </div>
+          </div>
+
+          <a class="next-case reveal" href="pak2go.html">
+            <div><span class="mono">Next case · 13 / 21</span><b>Pak2Go</b></div>
+            <span class="arr">&rarr;</span>
+          </a>
+        </section>
+      </article>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="cta-panel reveal">
+          <span class="dot tl"></span><span class="dot tr"></span><span class="dot bl"></span><span class="dot br"></span>
+          <div class="cta-clip">
+            <svg class="iso cta-cal" id="ctaCal" viewBox="0 0 460 340" aria-hidden="true"></svg>
+          </div>
+          <div class="cta-copy">
+            <div class="mono">Contact</div>
+            <h2>Let’s Talk About your Project</h2>
+            <p>Jump into a dynamic exploration and learn how you and your team can endlessly innovate your approach to design sourcing.</p>
+            <a class="btn btn-accent" href="https://calendly.com/fershocastro" target="_blank">Book a Call <span class="arr">&rsaquo;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span class="mono">© 2026 @Fershocastro. All rights reserved</span>
+      <div class="socials">
+        <a target="_blank" rel="nofollow" href="https://www.linkedin.com/in/fershocastro/">LinkedIn</a>
+        <a target="_blank" rel="nofollow" href="https://twitter.com/Fershocastro">Twitter</a>
+        <a target="_blank" rel="nofollow" href="https://dribbble.com/Fershocastro">Dribbble</a>
+        <a target="_blank" rel="nofollow" href="https://www.behance.net/fershocastro">Behance</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/tech-viz.js"></script>
+  <script src="assets/js/tech-case.js"></script>
+</body>
+</html>
