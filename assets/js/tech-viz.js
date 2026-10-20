@@ -63,6 +63,22 @@
       el(svg, 'rect', { x: cx - cw / 2, y: cy - 66, width: cw, height: 22, 'class': 'hub-core' });
       label(svg, cx, cy - 51, svg.dataset.center || '', 'middle');
     },
+    // Curva de emoción: data-points="55,40,10,45,75,92" (0–100)
+    curve: function (svg) {
+      var v = (svg.dataset.points || '').split(',').map(Number), W = 600, H = 170, pad = 20;
+      svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+      [0, .5, 1].forEach(function (f) { el(svg, 'line', { x1: 0, x2: W, y1: pad + f * (H - 2 * pad), y2: pad + f * (H - 2 * pad), 'class': 'grid-l' }); });
+      var x0 = 56, pts = v.map(function (y, i) { return [x0 + i * (W - x0 - pad) / (v.length - 1), H - pad - y / 100 * (H - 2 * pad)]; });
+      var d = pts.map(function (p, i) {
+        if (!i) return 'M' + p[0] + ' ' + p[1];
+        var q = pts[i - 1], mx = (q[0] + p[0]) / 2;
+        return 'C' + mx + ' ' + q[1] + ' ' + mx + ' ' + p[1] + ' ' + p[0] + ' ' + p[1];
+      }).join(' ');
+      el(svg, 'path', { 'class': 'curve-area', d: d + ' L' + pts[pts.length - 1][0] + ' ' + H + ' L' + pts[0][0] + ' ' + H + 'Z' });
+      el(svg, 'path', { 'class': 'curve', d: d });
+      pts.forEach(function (p, i) { el(svg, 'circle', { cx: p[0], cy: p[1], r: 6, 'class': 'pt' + (v[i] < 25 ? ' low' : '') }); });
+      label(svg, 0, 12, 'GOOD', 'start', 'mut'); label(svg, 0, H - 4, 'BAD', 'start', 'mut');
+    },
     // Capas de diseño atómico apiladas, con el total al lado.
     layers: function (svg) {
       svg.setAttribute('viewBox', '0 0 500 250');

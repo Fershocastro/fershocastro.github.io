@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fershocastro | Infotainment System</title>
+  <meta name="author" content="Fershocastro">
+  <meta name="description" content="Infotainment case study: redesigning Baptist Health's Smart Room TV for patient autonomy and less nurse workload.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/tech-case.css">
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <a href="home-tech-v2.html" class="brand">fershocastro<span>_</span></a>
+      <nav>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn-accent btn-sm" href="https://calendly.com/fershocastro" target="_blank">Book a Call <span class="arr">&rsaquo;</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Encabezado del caso ===== -->
+    <section class="case-hero">
+      <div class="wrap">
+        <div class="case-frame">
+          <div class="case-intro">
+            <a class="mono back reveal" href="portfolio-tech.html">&larr; All projects</a>
+            <h1 class="reveal">Infotainment<span class="cursor"></span></h1>
+            <p class="lead reveal">Redesigned the platform to improve usability, accessibility, and patient engagement through a more intuitive and supportive UX.</p>
+          </div>
+          <div class="case-meta reveal">
+            <dl>
+              <div><dt>Year</dt><dd>2024</dd></div>
+              <div><dt>Timeline</dt><dd>6 months · design thinking</dd></div>
+              <div><dt>Scope</dt><dd>Research, IA, TV UI, remote control, testing</dd></div>
+              <div><dt>Tools</dt><dd>Figma, FigJam, Maze</dd></div>
+              <div><dt>Categories</dt><dd>Health, B2B, B2C</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Barra compacta (mobile) ===== -->
+    <div class="mbar" aria-hidden="true">
+      <div class="wrap" style="position: relative;">
+        <span class="cur"><b>00</b> / 06 · Summary</span>
+        <button class="to-top" type="button" data-top>&uarr; Top</button>
+        <span class="track"><i></i></span>
+      </div>
+    </div>
+
+    <div class="wrap report">
+
+      <!-- ===== Índice lateral ===== -->
+      <aside class="rail" aria-label="Case study progress">
+        <div class="mono head"><span>UX case report</span><span>06 steps</span></div>
+        <ol>
+          <li><a href="#summary"><b>00</b>Summary<span class="fill"><i></i></span></a></li>
+          <li><a href="#empathize"><b>01</b>Empathize<span class="fill"><i></i></span></a></li>
+          <li><a href="#define"><b>02</b>Define<span class="fill"><i></i></span></a></li>
+          <li><a href="#ideate"><b>03</b>Ideate<span class="fill"><i></i></span></a></li>
+          <li><a href="#testing"><b>04</b>Prototype &amp; test<span class="fill"><i></i></span></a></li>
+          <li><a href="#handoff"><b>05</b>Handoff<span class="fill"><i></i></span></a></li>
+          <li><a href="#results"><b>06</b>Results<span class="fill"><i></i></span></a></li>
+        </ol>
+        <div class="total">
+          <span class="mono">Read</span>
+          <span class="n">0%</span>
+          <span class="track"><i></i></span>
+        </div>
+        <button class="to-top" type="button" data-top>&uarr; Back to top</button>
+      </aside>
+
+      <article>
+
+        <!-- ===== 00 Summary ===== -->
+        <section class="r-sec" id="summary" data-step="00" data-name="Summary">
+          <div class="r-head"><span class="mono">00 · Executive summary</span><span class="mono">6 months · design thinking</span></div>
+          <p class="tldr reveal">A redesign of Baptist Health's <em>Smart Room TV</em>, the in-room system patients use for care info, meals, entertainment, and family calls, so they can do it on their own and nurses get fewer interruptions.</p>
+
+          <div class="stats reveal" style="--n: 4;">
+            <div class="stat"><div class="n">17<em>%</em></div><p>Patient adoption before the redesign (goal: 65–70%)</p></div>
+            <div class="stat"><div class="n">80<em>%</em></div><p>Staff adoption in the first two weeks after launch</p></div>
+            <div class="stat"><div class="n">−35<em>%</em></div><p>User errors, with clearer remote and UI</p></div>
+            <div class="stat"><div class="n">4.2<em>/5</em></div><p>Patient and family satisfaction</p></div>
+          </div>
+
+          <div class="pao reveal">
+            <div><span class="mono">Problem</span><p>Despite the investment, the Smart Room was hard to use, relied on a confusing remote, and pushed basic tasks to nurses.</p></div>
+            <div><span class="mono">Approach</span><p>Design thinking over six months: research with patients and staff, system mapping, field testing with 100 people, and a new remote.</p></div>
+            <div><span class="mono">Outcome</span><p>A simpler, accessible TV experience that patients use independently, with less strain on staff.</p></div>
+          </div>
+
+          <div class="r-grid" style="margin-top: 24px;">
+            <div class="reveal">
+              <span class="mono r-sub">Objectives</span>
+              <ul class="did">
+                <li><span><strong>−30%</strong> nurse interruptions.</span></li>
+                <li><span><strong>+50%</strong> patient feature use.</span></li>
+                <li><span><strong>+2 points</strong> ease of use (7-point scale).</span></li>
+                <li><span><strong>−40%</strong> task completion time.</span></li>
+                <li><span><strong>+25%</strong> patient satisfaction.</span></li>
+              </ul>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>Who the system serves</span><span>Fig. A</span></div>
+              <svg data-viz="hub" data-center="SMART ROOM" data-core="Patients &amp; families;Nurses" data-items="Meals;Entertainment;Education;Family calls;Care team;Plan for the day;Doctors;Admins" role="img" aria-label="The Smart Room at the center, serving patients, families and nurses, connected to meals, entertainment, education, family calls and more"></svg>
+            </div>
+          </div>
+          <div class="outputs reveal"><span class="mono">My role</span><span class="chip on">Product Designer</span><span class="chip">Health industry</span><span class="chip">Azure DevOps</span></div>
+        </section>
+
+        <!-- ===== 01 Empathize ===== -->
+        <section class="r-sec" id="empathize" data-step="01" data-name="Empathize">
+          <div class="r-head"><span class="mono">Step 01 / 05</span><span class="mono">Months 1–2</span></div>
+          <div class="r-title"><span class="num">01</span><h2>Empathize</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Understand why the Smart Room failed, combining what users do with why they do it.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">Mixed-methods research</span>
+              <ul class="did">
+                <li><span><strong>Interviews</strong> with patients, nurses, and doctors on pain points and emotional drivers.</span></li>
+                <li><span><strong>Platform analytics</strong> to find underused features, touchpoints, and drop-offs.</span></li>
+                <li><span><strong>Surveys</strong> to a broader base to validate patterns and measure satisfaction.</span></li>
+                <li><span><strong>Synthesis</strong> with thematic coding, triangulation, and affinity diagrams.</span></li>
+              </ul>
+              <div class="cells c2" style="margin-top: 20px;">
+                <div class="cell"><span class="idx">WORKLOAD</span><h4 class="big">+15%</h4><p>More workload for medical staff, cutting direct patient care time.</p></div>
+                <div class="cell tint"><span class="idx">ADOPTION</span><h4 class="big">17%</h4><p>Patient adoption, far from the 65–70% goal.</p></div>
+              </div>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>Survey · patient information</span><span>Fig. B</span></div>
+              <div class="yn">
+                <div class="legend mono"><span>Yes</span><span class="no">No</span></div>
+                <div class="q"><span class="t">Is the platform useful to manage your medical information?</span><div class="track"><i class="yes" style="width: 40%">40%</i><i class="no" style="width: 60%">60%</i></div></div>
+                <div class="q"><span class="t">Frequent delays accessing your medical records?</span><div class="track"><i class="yes" style="width: 88%">88%</i><i class="no" style="width: 12%">12%</i></div></div>
+                <div class="q"><span class="t">Does it help you communicate with providers?</span><div class="track"><i class="yes" style="width: 28%">28%</i><i class="no" style="width: 72%">72%</i></div></div>
+                <div class="q"><span class="t">Hard to find information about your diet?</span><div class="track"><i class="yes" style="width: 64%">64%</i><i class="no" style="width: 36%">36%</i></div></div>
+                <div class="q"><span class="t">Should it be significantly improved?</span><div class="track"><i class="yes" style="width: 83%">83%</i><i class="no" style="width: 17%">17%</i></div></div>
+                <div class="q"><span class="t">Satisfied with technical support?</span><div class="track"><i class="yes" style="width: 92%">92%</i><i class="no" style="width: 8%">8%</i></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="q2 reveal">
+            <blockquote><p>Using the system is like solving a maze every time. It's frustrating and confusing.</p><cite>Emily Rodriguez · Patient</cite></blockquote>
+            <blockquote><p>Navigating complex system interfaces requires ongoing training, diverting time from patient care.</p><cite>Mathew López · Internal Medicine</cite></blockquote>
+          </div>
+          <div class="outputs reveal"><span class="mono">Outputs</span><span class="chip">Interviews</span><span class="chip">Analytics review</span><span class="chip">Surveys</span><span class="chip on">Affinity map</span></div>
+        </section>
+
+        <!-- ===== 02 Define ===== -->
+        <section class="r-sec" id="define" data-step="02" data-name="Define">
+          <div class="r-head"><span class="mono">Step 02 / 05</span><span class="mono">Month 2</span></div>
+          <div class="r-title"><span class="num">02</span><h2>Define</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Name the core problem: the system was too technical, hard to use, and added workload instead of reducing it.</p>
+
+          <div class="cells c4 reveal">
+            <div class="cell"><span class="idx">INSIGHT 01</span><h4>Patients seek autonomy</h4><p>Many prefer handling basic tasks instead of calling nurses.</p></div>
+            <div class="cell"><span class="idx">INSIGHT 02</span><h4>Remotes cause frustration</h4><p>Especially for older adults.</p></div>
+            <div class="cell"><span class="idx">INSIGHT 03</span><h4>Popular features were hidden</h4><p>Entertainment and food were the most used, yet hard to reach.</p></div>
+            <div class="cell"><span class="idx">INSIGHT 04</span><h4>Emotional connection matters</h4><p>Patients wanted to call or message family from the TV.</p></div>
+          </div>
+
+          <div class="reveal" style="margin-top: 24px;">
+            <span class="mono r-sub">Personas · 3 patients and families, 3 medical staff</span>
+            <div class="personas">
+              <div class="persona">
+                <div class="who"><span class="av">DR</span><div><b>Diana Robles, 34</b>Mother of a sick child</div></div>
+                <dl><div><dt>Pain</dt><dd>Can't find educational content for her child; no personalization.</dd></div><div><dt>Solve</dt><dd>Entertainment, education, and quick contact with medical staff.</dd></div></dl>
+              </div>
+              <div class="persona">
+                <div class="who"><span class="av">JN</span><div><b>Javier Nelson, 54</b>Caregiver for his father</div></div>
+                <dl><div><dt>Pain</dt><dd>No clear info on how to care for his father or on dietary options.</dd></div><div><dt>Solve</dt><dd>Practical caregiving guides and clear health status.</dd></div></dl>
+              </div>
+              <div class="persona">
+                <div class="who"><span class="av">AM</span><div><b>Anya Mikels, 32</b>Nurse</div></div>
+                <dl><div><dt>Pain</dt><dd>Slow access to diet and medication; disconnected systems.</dd></div><div><dt>Solve</dt><dd>Patient, diet, and medication records in one place.</dd></div></dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="viz reveal" style="margin-top: 24px;">
+            <div class="mono cap"><span>Journey · scenario: find educational content</span><span>Fig. C</span></div>
+            <svg data-viz="curve" data-points="45,38,8,42,78,95" role="img" aria-label="Emotion curve: starts unsure, drops to lost when menus lead nowhere, then rises to satisfied after finding the content"></svg>
+            <div class="curve-notes" style="--n: 6;">
+              <p><b>01 · UNSURE</b>Not sure where to start.</p>
+              <p><b>02 · CONFUSED</b>Several options; where is education?</p>
+              <p><b>03 · LOST</b>Two menus, ends up in videos.</p>
+              <p><b>04 · FOUND IT</b>Buried in a sub-menu.</p>
+              <p><b>05 · ENGAGED</b>The video is clear and well-paced.</p>
+              <p><b>06 · AUTONOMOUS</b>Didn't need to wait for a nurse.</p>
+            </div>
+          </div>
+
+          <div class="decision reveal"><span class="mono">Hypothesis</span>If we make the Smart Room TV simpler, more intuitive, and structured around patient needs, with clearer labels, hierarchy, and navigation, patients will use it more independently and non-clinical staff workload will decrease.</div>
+          <div class="outputs reveal"><span class="mono">Key metrics</span><span class="chip">Staff interruptions</span><span class="chip">Feature adoption</span><span class="chip">Task time</span><span class="chip">Ease of use</span><span class="chip">Satisfaction</span><span class="chip">Support requests</span><span class="chip on">Onboarding success</span></div>
+        </section>
+
+        <!-- ===== 03 Ideate ===== -->
+        <section class="r-sec" id="ideate" data-step="03" data-name="Ideate">
+          <div class="r-head"><span class="mono">Step 03 / 05</span><span class="mono">Months 3–4</span></div>
+          <div class="r-title"><span class="num">03</span><h2>Ideate</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Turn research into structure: what comes first, how actions reach the hospital, and how the UI stays calm when systems don't.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">Research-driven decisions</span>
+              <ul class="did">
+                <li><span><strong>Simplified interface:</strong> less complexity and clearer iconography against cognitive overload.</span></li>
+                <li><span><strong>Prioritized features:</strong> entertainment and food ordering made prominent.</span></li>
+                <li><span><strong>Accessibility:</strong> larger text, contrast, and simpler flows for elderly users.</span></li>
+                <li><span><strong>System thinking:</strong> mapped how each action, like ordering food, flows to kitchens, EMR, and staff.</span></li>
+              </ul>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>Information architecture · preview (NDA)</span><span>Fig. D</span></div>
+              <div class="sitemap">
+                <div class="entry"><span class="chip">Register</span><span class="arrow">→</span><span class="chip">Onboarding</span><span class="arrow">→</span><span class="chip on">Home</span><span class="arrow">←</span><span class="chip">Login</span></div>
+                <div class="mods">
+                  <div class="mod hi"><b>Priority</b><span>Home</span><span>Entertainment</span><span>My meals</span><span>Family connect</span></div>
+                  <div class="mod"><b>Next sprints</b><span>Educational content</span><span>Plan for the day</span></div>
+                  <div class="mod"><b>Profile</b><span>Visits</span><span>Preferences</span><span>Room details</span></div>
+                  <div class="mod"><b>Brand</b><span>#005776 · #2EA84A</span><span>Poppins · PineApp base</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="viz reveal" style="margin-top: 24px;">
+            <div class="mono cap"><span>Task flow · “As a patient, I want to choose my meals according to my diet”</span><span>Fig. E</span></div>
+            <div class="hflow" style="--n: 5;">
+              <div class="node"><b>My Meals</b><span>From the TV home</span></div>
+              <div class="node"><b>Diet filter</b><span>Only doctor-assigned options</span></div>
+              <div class="node"><b>Order</b><span>At least 1 hour ahead</span></div>
+              <div class="node"><b>Served</b><span>At the doctor's time</span></div>
+              <div class="node on"><b>Clear status</b><span>“Your meal is on the way”</span></div>
+            </div>
+          </div>
+
+          <div class="cells c4 reveal" style="margin-top: 24px;">
+            <div class="cell"><span class="idx">FALLBACK</span><h4>Safe defaults</h4><p>“Your request is pending” or a manual alert when systems are slow.</p></div>
+            <div class="cell"><span class="idx">ADAPT</span><h4>Adaptable logic</h4><p>Flows adjust by room type, wing, or hospital rules.</p></div>
+            <div class="cell"><span class="idx">PRIORITY</span><h4>Latency-aware</h4><p>Temperature and lights in real time; surveys can wait.</p></div>
+            <div class="cell"><span class="idx">RECOVER</span><h4>Retry states</h4><p>Retry options or “notify staff manually” when something fails.</p></div>
+          </div>
+          <figure class="shot reveal" style="margin-top: 24px;">
+            <img src="assets/images/projects/infotainment/tech/concept02.png" alt="Mid-fidelity wireframe, validated concept 02: side menu, welcome, plan for the day and visits" loading="lazy">
+            <figcaption><span>Mid-fi · concept 02 (validated of 3)</span><span>Fig. F</span></figcaption>
+          </figure>
+        </section>
+
+        <!-- ===== 04 Prototype & test ===== -->
+        <section class="r-sec" id="testing" data-step="04" data-name="Prototype &amp; test">
+          <div class="r-head"><span class="mono">Step 04 / 05</span><span class="mono">Months 4–5</span></div>
+          <div class="r-title"><span class="num">04</span><h2>Prototyping &amp; testing</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Validate the redesign in realistic hospital conditions, including the remote control.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">How we tested</span>
+              <ul class="did">
+                <li><span><strong>Figma prototypes</strong> replicating the full TV, with directional navigation.</span></li>
+                <li><span><strong>Maze</strong> remote tests on meals and content: heatmaps, time on task, completion.</span></li>
+                <li><span><strong>100 participants</strong>, patients, visitors, and staff, chosen at random across Baptist hospitals.</span></li>
+                <li><span><strong>Accessibility checks:</strong> Stark (WCAG AA), visual impairment simulations, and inclusive sessions.</span></li>
+              </ul>
+            </div>
+            <figure class="shot reveal">
+              <img src="assets/images/projects/infotainment/tech/field-test.png" alt="Field usability test in a hospital room with the remote control" loading="lazy">
+              <figcaption><span>Field test in a hospital room</span><span>Fig. G</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="viz reveal" style="margin-top: 24px;">
+            <div class="mono cap"><span>Task success rate</span><span>Fig. H</span></div>
+            <div class="bars" style="--n: 6;">
+              <div class="bar"><span class="v">97%</span><span class="col"><i style="--v: 97%"></i></span><span class="l">Know care team</span></div>
+              <div class="bar"><span class="v">91%</span><span class="col"><i style="--v: 91%"></i></span><span class="l">Personal info</span></div>
+              <div class="bar low"><span class="v">86%</span><span class="col"><i style="--v: 86%"></i></span><span class="l">Diagnosis &amp; next steps</span></div>
+              <div class="bar"><span class="v">92%</span><span class="col"><i style="--v: 92%"></i></span><span class="l">Medical records</span></div>
+              <div class="bar"><span class="v">94%</span><span class="col"><i style="--v: 94%"></i></span><span class="l">New remote features</span></div>
+              <div class="bar low"><span class="v">85%</span><span class="col"><i style="--v: 85%"></i></span><span class="l">Plan &amp; meals</span></div>
+            </div>
+          </div>
+
+          <div class="reveal" style="margin-top: 24px;">
+            <span class="mono r-sub">Before &amp; after testing</span>
+            <figure class="shot"><img src="assets/images/projects/infotainment/tech/before-after.png" alt="Home screen before testing, with two dense columns, and after, with a short welcome and a condensed itinerary" loading="lazy"><figcaption><span>Two dense columns → clear hierarchy</span><span>Fig. I</span></figcaption></figure>
+            <div class="compare" style="margin-top: 12px;">
+              <div><span class="mono lbl">Before</span><ul><li>Two full columns: welcome and tips, plus itinerary, alerts, and shortcuts.</li><li>Patients couldn't tell sections apart and ignored key items.</li></ul></div>
+              <div class="after"><span class="mono lbl">After</span><ul><li>A short welcome and only today's itinerary, condensed.</li><li>Tips and shortcuts moved to sub-sections; calmer and easier to scan.</li></ul></div>
+            </div>
+          </div>
+
+          <div class="r-grid" style="margin-top: 24px;">
+            <div class="reveal">
+              <span class="mono r-sub">New remote control</span>
+              <ul class="did">
+                <li><span><strong>Higher contrast</strong> on every button.</span></li>
+                <li><span><strong>Icons over labels</strong>, universally recognizable regardless of language.</span></li>
+                <li><span><strong>Direct requests</strong>: nurse, water, toilet, and pain.</span></li>
+                <li><span><strong>Accessible by default</strong>: labeled icons, large type, captions, and never color alone.</span></li>
+              </ul>
+            </div>
+            <figure class="shot reveal" style="max-width: 200px; justify-self: center;">
+              <img style="max-height: 400px; width: auto; margin: 0 auto;" src="assets/images/projects/infotainment/tech/remote.png" alt="Redesigned remote control with nurse, water, toilet and pain buttons" loading="lazy">
+              <figcaption><span>Renovated remote</span><span>Fig. J</span></figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- ===== 05 Handoff ===== -->
+        <section class="r-sec" id="handoff" data-step="05" data-name="Handoff">
+          <div class="r-head"><span class="mono">Step 05 / 05</span><span class="mono">15 days</span></div>
+          <div class="r-title"><span class="num">05</span><h2>Handoff</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Ship what was designed, adapting to the real limits of TVs and hospital systems.</p>
+
+          <div class="cells c3 reveal">
+            <div class="cell"><span class="idx">DOCS</span><h4>Documentation &amp; training</h4><p>Specs, flows, and interaction rules in Figma, with training for stakeholders and operations.</p></div>
+            <div class="cell"><span class="idx">FEEDBACK</span><h4>Feedback integration</h4><p>Testing insights folded into the final product before handoff.</p></div>
+            <div class="cell"><span class="idx">SUPPORT</span><h4>Technical support</h4><p>A team set up for initial queries and ongoing assistance.</p></div>
+          </div>
+
+          <div class="reveal" style="margin-top: 24px;">
+            <span class="mono r-sub">Problems found → solutions</span>
+            <div class="fixes">
+              <div><b>TV OS couldn't skip disabled items</b><span>→</span><span>Redesigned focus order with native device navigation</span></div>
+              <div><b>Restricted meal APIs</b><span>→</span><span>Cached menus and pending-status messages</span></div>
+              <div><b>Video + subtitles lagged on some TVs</b><span>→</span><span>Lower default resolution and static fallback content</span></div>
+            </div>
+          </div>
+          <div class="decision reveal"><span class="mono">Trade-offs</span>Simplified some advanced features for stability on legacy hardware, and prioritized meals, entertainment, and communication over less critical functions.</div>
+        </section>
+
+        <!-- ===== 06 Results ===== -->
+        <section class="r-sec" id="results" data-step="06" data-name="Results">
+          <div class="r-head"><span class="mono">06 · Results</span><span class="mono">Gradual rollout</span></div>
+          <div class="r-title"><span class="num">06</span><h2>Clear, enjoyable, informative</h2></div>
+          <p class="r-goal"><span class="mono">Outcome</span>Rolled out gradually across the hospital chain, adjusting with early feedback.</p>
+
+          <div class="cells c4 reveal">
+            <div class="cell"><span class="idx">ADOPTION</span><h4 class="big">80%</h4><p>Of medical and admin staff in two weeks.</p><div class="hbar"><i style="--v: 80%"></i></div></div>
+            <div class="cell"><span class="idx">RESPONSE</span><h4 class="big">−30%</h4><p>Nurse response time (pre-launch phase).</p><div class="hbar"><i style="--v: 30%"></i></div></div>
+            <div class="cell"><span class="idx">LEARNING</span><h4 class="big">90%</h4><p>Proficient with the platform and remote in 15 min.</p><div class="hbar"><i style="--v: 90%"></i></div></div>
+            <div class="cell tint"><span class="idx">SPEED</span><h4 class="big">2×</h4><p>Faster: assistance 3 → 1.5 min, meals 4 → 2 min.</p><div class="hbar"><i style="--v: 50%"></i></div></div>
+          </div>
+
+          <div class="reveal" style="margin-top: 32px;">
+            <span class="mono r-sub">What the process taught us</span>
+            <div class="lessons">
+              <div><span>01</span><p><b>Collaborate early</b>Cross-functional work avoids costly redesigns.</p></div>
+              <div><span>02</span><p><b>Constrained devices</b>Demand creative simplification, not fewer needs met.</p></div>
+              <div><span>03</span><p><b>Accessibility from day one</b>Improves outcomes for everyone.</p></div>
+              <div><span>04</span><p><b>Test where it's used</b>Real rooms reveal what prototypes can't.</p></div>
+            </div>
+          </div>
+
+          <div class="reveal" style="margin-top: 32px;">
+            <span class="mono r-sub">Evidence</span>
+            <div class="evidence">
+              <figure><img src="assets/images/projects/infotainment/tech/before.png" alt="Smart Room before the redesign" loading="lazy"><figcaption>Before</figcaption></figure>
+              <figure><img src="assets/images/projects/infotainment/tech/tv-home.png" alt="Redesigned home screen" loading="lazy"><figcaption>After</figcaption></figure>
+              <figure><img src="assets/images/projects/infotainment/tech/education.png" alt="Education videos and prescribed education" loading="lazy"><figcaption>Education</figcaption></figure>
+              <figure><img src="assets/images/projects/infotainment/tech/onboarding.png" alt="Onboarding: language and how the remote works" loading="lazy"><figcaption>Onboarding</figcaption></figure>
+            </div>
+          </div>
+
+          <a class="next-case reveal" href="baptist.html">
+            <div><span class="mono">Next case · 05 / 21</span><b>Baptist Health</b></div>
+            <span class="arr">&rarr;</span>
+          </a>
+        </section>
+      </article>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="cta-panel reveal">
+          <span class="dot tl"></span><span class="dot tr"></span><span class="dot bl"></span><span class="dot br"></span>
+          <div class="cta-clip">
+            <svg class="iso cta-cal" id="ctaCal" viewBox="0 0 460 340" aria-hidden="true"></svg>
+          </div>
+          <div class="cta-copy">
+            <div class="mono">Contact</div>
+            <h2>Let’s Talk About your Project</h2>
+            <p>Jump into a dynamic exploration and learn how you and your team can endlessly innovate your approach to design sourcing.</p>
+            <a class="btn btn-accent" href="https://calendly.com/fershocastro" target="_blank">Book a Call <span class="arr">&rsaquo;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span class="mono">© 2026 @Fershocastro. All rights reserved</span>
+      <div class="socials">
+        <a target="_blank" rel="nofollow" href="https://www.linkedin.com/in/fershocastro/">LinkedIn</a>
+        <a target="_blank" rel="nofollow" href="https://twitter.com/Fershocastro">Twitter</a>
+        <a target="_blank" rel="nofollow" href="https://dribbble.com/Fershocastro">Dribbble</a>
+        <a target="_blank" rel="nofollow" href="https://www.behance.net/fershocastro">Behance</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/tech-viz.js"></script>
+  <script src="assets/js/tech-case.js"></script>
+</body>
+</html>
