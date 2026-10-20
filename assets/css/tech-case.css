@@ -730,7 +730,7 @@ footer.site .wrap { display: flex; justify-content: space-between; align-items: 
 .journey-in > .rh { font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: .04em; color: var(--accent); background: var(--surface); }
 .journey-in > .st { color: var(--text); font-weight: 500; background: var(--surface); }
 .journey-in .emo { display: flex; flex-direction: column; gap: 6px; }
-.journey-in .emo .lvl { height: 34px; position: relative; border-bottom: 1px dashed var(--dash); }
+.journey-in .emo .lvl { height: 64px; position: relative; border-bottom: 1px dashed var(--dash); }
 .journey-in .emo .lvl i { position: absolute; left: 0; bottom: var(--e); width: 9px; height: 9px; background: var(--accent); }
 .journey-in .emo b { font-weight: 500; color: var(--text); font-size: 12.5px; }
 
@@ -811,3 +811,5 @@ footer.site .wrap { display: flex; justify-content: space-between; align-items: 
   .curve-notes { grid-template-columns: 1fr 1fr; }
 }
 .bars .l { overflow-wrap: anywhere; }
+@media (max-width: 960px) { .personas[style*="repeat(4"] { grid-template-columns: 1fr 1fr !important; } }
+@media (max-width: 640px) { .personas[style*="repeat(4"] { grid-template-columns: 1fr !important; } }
