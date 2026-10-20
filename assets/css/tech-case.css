@@ -810,3 +810,4 @@ footer.site .wrap { display: flex; justify-content: space-between; align-items: 
   .compare { grid-template-columns: 1fr; }
   .curve-notes { grid-template-columns: 1fr 1fr; }
 }
+.bars .l { overflow-wrap: anywhere; }

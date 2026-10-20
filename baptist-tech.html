@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fershocastro | Baptist Health</title>
+  <meta name="author" content="Fershocastro">
+  <meta name="description" content="Baptist Health case study: Design and implementation of improvements in the Design System and new business flows.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/tech-case.css">
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <a href="home-tech-v2.html" class="brand">fershocastro<span>_</span></a>
+      <nav>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn-accent btn-sm" href="https://calendly.com/fershocastro" target="_blank">Book a Call <span class="arr">&rsaquo;</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Encabezado del caso ===== -->
+    <section class="case-hero">
+      <div class="wrap">
+        <div class="case-frame">
+          <div class="case-intro">
+            <a class="mono back reveal" href="portfolio-tech.html">&larr; All projects</a>
+            <h1 class="reveal">Baptist Health<span class="cursor"></span></h1>
+            <p class="lead reveal">Design and implementation of improvements in the Design System and new business flows.</p>
+          </div>
+          <div class="case-meta reveal">
+            <dl>
+              <div><dt>Year</dt><dd>2023</dd></div>
+              <div><dt>Timeline</dt><dd>1 year · 2-week sprints</dd></div>
+              <div><dt>Scope</dt><dd>Research, IA, scheduling, records, responsive</dd></div>
+              <div><dt>Tools</dt><dd>Figma, Maze, Hotjar</dd></div>
+              <div><dt>Categories</dt><dd>Health, B2B, B2C</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Barra compacta (mobile) ===== -->
+    <div class="mbar" aria-hidden="true">
+      <div class="wrap" style="position: relative;">
+        <span class="cur"><b>00</b> / 06 · Summary</span>
+        <button class="to-top" type="button" data-top>&uarr; Top</button>
+        <span class="track"><i></i></span>
+      </div>
+    </div>
+
+    <div class="wrap report">
+
+      <!-- ===== Índice lateral ===== -->
+      <aside class="rail" aria-label="Case study progress">
+        <div class="mono head"><span>UX case report</span><span>06 steps</span></div>
+        <ol>
+          <li><a href="#summary"><b>00</b>Summary<span class="fill"><i></i></span></a></li>
+          <li><a href="#research"><b>01</b>Research<span class="fill"><i></i></span></a></li>
+          <li><a href="#foundation"><b>02</b>Phase 1 · Foundation<span class="fill"><i></i></span></a></li>
+          <li><a href="#care"><b>03</b>Phase 2 · Get care<span class="fill"><i></i></span></a></li>
+          <li><a href="#records"><b>04</b>Phase 3 · Records<span class="fill"><i></i></span></a></li>
+          <li><a href="#launch"><b>05</b>Launch<span class="fill"><i></i></span></a></li>
+          <li><a href="#results"><b>06</b>Results<span class="fill"><i></i></span></a></li>
+        </ol>
+        <div class="total">
+          <span class="mono">Read</span>
+          <span class="n">0%</span>
+          <span class="track"><i></i></span>
+        </div>
+        <button class="to-top" type="button" data-top>&uarr; Back to top</button>
+      </aside>
+
+      <article>
+
+        <!-- ===== 00 Summary ===== -->
+        <section class="r-sec" id="summary" data-step="00" data-name="Summary">
+          <div class="r-head"><span class="mono">00 · Executive summary</span><span class="mono">1 year · 2-week sprints</span></div>
+          <p class="tldr reveal">A new digital platform for Baptist Health (<em>PineApp</em>) across desktop, mobile, and TV, so patients can book care, see their records, and talk to their care team in one place.</p>
+
+          <div class="stats reveal" style="--n: 4;">
+            <div class="stat"><div class="n">3<em>M+</em></div><p>Users impacted by the platform</p></div>
+            <div class="stat"><div class="n">400<em>+</em></div><p>Screens, with tablet and mobile variations</p></div>
+            <div class="stat"><div class="n">+69<em>%</em></div><p>Agility in medical service delivery</p></div>
+            <div class="stat"><div class="n">88<em>%</em></div><p>Found the platform easy to use</p></div>
+          </div>
+
+          <div class="pao reveal">
+            <div><span class="mono">Problem</span><p>Patients struggled to remember appointments, reach their records, and communicate with medical staff.</p></div>
+            <div><span class="mono">Approach</span><p>One year of two-week sprints in three phases: foundation, get care &amp; scheduling, and records.</p></div>
+            <div><span class="mono">Outcome</span><p>A platform on iOS and Android that reduces admin errors, improves compliance with reminders, and speeds up care.</p></div>
+          </div>
+
+          <div class="viz reveal" style="margin-top: 24px;">
+            <div class="mono cap"><span>Roadmap · three phases over one year</span><span>Fig. A</span></div>
+            <div class="mgantt" style="grid-template-columns: repeat(12, 1fr);">
+              <span class="m" style="grid-column: span 4;">Months 1–4</span><span class="m" style="grid-column: span 4;">Months 5–8</span><span class="m" style="grid-column: span 4;">Months 9–12</span>
+              <span class="b now" style="grid-column: 1 / 5;">01 Foundation</span>
+              <span class="b" style="grid-column: 5 / 9;">02 Get care</span>
+              <span class="b" style="grid-column: 9 / 13;">03 Records</span>
+            </div>
+          </div>
+          <div class="outputs reveal"><span class="mono">Tools</span><span class="chip">Figma</span><span class="chip">Maze</span><span class="chip">Hotjar</span><span class="chip on">Desktop · mobile · TV</span></div>
+        </section>
+
+        <!-- ===== 01 Research ===== -->
+        <section class="r-sec" id="research" data-step="01" data-name="Research">
+          <div class="r-head"><span class="mono">Step 01 / 05</span><span class="mono">Month 1</span></div>
+          <div class="r-title"><span class="num">01</span><h2>Research</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Understand doctors, patients, and administrative staff before defining the MVP.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Interviews and focus groups</strong> with 45+ patients, 10 medical specialists, and 25 admin staff.</span></li>
+                <li><span><strong>Analyzed medical workflows</strong> so the platform aligns with real healthcare practices.</span></li>
+                <li><span><strong>Defined personas</strong> from a database of 30,000+ evaluated records.</span></li>
+                <li><span><strong>Defined the MVP:</strong> scheduling, medical record access, and basic communication.</span></li>
+              </ul>
+              <div class="decision"><span class="mono">Key challenge</span>Getting clarity on patients' needs was hard: many were reluctant or resistant to open communication.</div>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>Issues to solve</span><span>Fig. B</span></div>
+              <svg data-viz="hub" data-center="PATIENT" data-core="Appointments;Records;Communication" data-items="Reminders;Lab results;Vaccinations;Chronic care;Follow-ups;Pediatrics;Preventive care;Care team" role="img" aria-label="The patient at the center, with appointments, records and communication as the three issues, connected to related needs"></svg>
+            </div>
+          </div>
+
+          <div class="reveal" style="margin-top: 24px;">
+            <span class="mono r-sub">Final target · 3 personas</span>
+            <div class="personas">
+              <div class="persona">
+                <div class="who"><span class="av">ML</span><div><b>Maria Lopez, 41</b>Working professional</div></div>
+                <dl><div><dt>Pain</dt><dd>A busy schedule; forgets appointments; limited access to records.</dd></div><div><dt>Solve</dt><dd>Scheduling and notifications from a mobile app.</dd></div></dl>
+              </div>
+              <div class="persona">
+                <div class="who"><span class="av">JM</span><div><b>John Martinez, 32</b>Full-time worker</div></div>
+                <dl><div><dt>Pain</dt><dd>No detailed history or vaccination records; communication barriers.</dd></div><div><dt>Solve</dt><dd>Instant access to history, vaccinations, and preventive notes.</dd></div></dl>
+              </div>
+              <div class="persona">
+                <div class="who"><span class="av">SR</span><div><b>Susan Roberts, 35</b>Full-time caregiver</div></div>
+                <dl><div><dt>Pain</dt><dd>Managing her child's appointments, vaccinations, and records.</dd></div><div><dt>Solve</dt><dd>Seamless scheduling and reminders for her child's care.</dd></div></dl>
+              </div>
+            </div>
+          </div>
+          <div class="q2 reveal">
+            <blockquote><p>I need a platform that allows easy access to my medical history to coordinate ongoing treatments and monitor my chronic conditions.</p><cite>Thomas Boston · Chronic patient</cite></blockquote>
+            <blockquote><p>To enhance pediatric care, it's essential to have detailed records of vaccinations and child development easily and securely accessible.</p><cite>Abigail Jhonson · Pediatrician</cite></blockquote>
+          </div>
+        </section>
+
+        <!-- ===== 02 Phase 1 ===== -->
+        <section class="r-sec" id="foundation" data-step="02" data-name="Phase 1 · Foundation">
+          <div class="r-head"><span class="mono">Step 02 / 05</span><span class="mono">Phase 1 · 4 months</span></div>
+          <div class="r-title"><span class="num">02</span><h2>Foundation</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Build the base everything else depends on: navigation, access, profile, and brand.</p>
+
+          <div class="cells c5 reveal">
+            <div class="cell"><span class="idx">NAV</span><h4>Menu sections</h4><p>Appointments, records, reminders, and more.</p></div>
+            <div class="cell"><span class="idx">PRE</span><h4>Pre-registration</h4><p>Profile ready before the first visit.</p></div>
+            <div class="cell"><span class="idx">AUTH</span><h4>Login &amp; access</h4><p>Secure entry and credential management.</p></div>
+            <div class="cell"><span class="idx">SETUP</span><h4>Set-ups</h4><p>Language, notifications, accessibility, data.</p></div>
+            <div class="cell tint"><span class="idx">PROFILE</span><h4>Profile</h4><p>Personal info, insurance cards, records.</p></div>
+          </div>
+
+          <div class="viz reveal" style="margin-top: 24px;">
+            <div class="mono cap"><span>Information architecture · initial stage</span><span>Fig. C</span></div>
+            <div class="sitemap">
+              <div class="entry"><span class="chip">Login / sign up</span><span class="arrow">→</span><span class="chip">Pre-register</span><span class="arrow">→</span><span class="chip on">Home</span></div>
+              <div class="mods">
+                <div class="mod hi"><b>Navbar</b><span>Appointments</span><span>Records</span><span>Get care</span><span>Pay my bill</span><span>Patient resources</span></div>
+                <div class="mod"><b>Account</b><span>Upcoming appointments</span><span>Quick links</span><span>Screenings</span></div>
+                <div class="mod"><b>Profile data</b><span>Consent documents</span><span>Basic info · insurance</span><span>Questionnaires</span><span>Coordination of benefits</span></div>
+                <div class="mod"><b>Brand</b><span>#00664E · #00B288 · #154152</span><span>Roboto · icon set</span></div>
+              </div>
+            </div>
+          </div>
+          <figure class="shot reveal" style="margin-top: 24px;">
+            <img src="assets/images/projects/baptist/tech/hero.png" alt="Home on desktop and mobile: quick links to pay a bill, lab results and prescriptions, plus get care" loading="lazy">
+            <figcaption><span>Home · desktop + mobile</span><span>Fig. D</span></figcaption>
+          </figure>
+          <div class="outputs reveal"><span class="mono">Outputs</span><span class="chip">IA</span><span class="chip">Style guide</span><span class="chip on">Initial prototype</span></div>
+        </section>
+
+        <!-- ===== 03 Phase 2 ===== -->
+        <section class="r-sec" id="care" data-step="03" data-name="Phase 2 · Get care">
+          <div class="r-head"><span class="mono">Step 03 / 05</span><span class="mono">Phase 2 · 4 months</span></div>
+          <div class="r-title"><span class="num">03</span><h2>Get care &amp; schedule</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>After presenting the prototype to executives, build the two essential flows: getting care and scheduling.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Card sorting</strong>, online and in hospital units, to group care features under Get care vs. Schedule.</span></li>
+                <li><span><strong>Storyboard</strong> of Katia, who books an appointment for back pain from her phone.</span></li>
+                <li><span><strong>Added</strong> pre-visit, donations, and DAISY awards for outstanding nurses.</span></li>
+                <li><span><strong>Usability studies</strong> on navigation, clarity of required info, and booking.</span></li>
+              </ul>
+              <div class="decision"><span class="mono">Key decision</span>A guided entry, “Need care? Let us guide you”, for patients who don't know which specialist they need.</div>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>Iteration results</span><span>Fig. E</span></div>
+              <div class="cells c2">
+                <div class="cell"><span class="idx">BOOKING</span><h4 class="big">+30%</h4><p>Success rate after the 3rd iteration.</p></div>
+                <div class="cell"><span class="idx">PRE-VISIT</span><h4 class="big">75%</h4><p>Registered pre-visits proactively.</p></div>
+                <div class="cell"><span class="idx">MAMMOGRAPHY</span><h4 class="big">+25%</h4><p>Bookings after the 4th iteration.</p></div>
+                <div class="cell tint"><span class="idx">GUIDANCE</span><h4 class="big">90%</h4><p>Satisfied with “Let us guide you”.</p></div>
+              </div>
+            </div>
+          </div>
+          <figure class="shot reveal" style="margin-top: 24px;">
+            <img src="assets/images/projects/baptist/tech/storyboard.png" alt="Storyboard: Katia feels back pain, opens the app, selects Get Care, finds a doctor, fills the form and gets a confirmation" loading="lazy">
+            <figcaption><span>Storyboard · Katia books an appointment</span><span>Fig. F</span></figcaption>
+          </figure>
+        </section>
+
+        <!-- ===== 04 Phase 3 ===== -->
+        <section class="r-sec" id="records" data-step="04" data-name="Phase 3 · Records">
+          <div class="r-head"><span class="mono">Step 04 / 05</span><span class="mono">Phase 3 · 4 months</span></div>
+          <div class="r-title"><span class="num">04</span><h2>Records</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Enrich the platform with record management, using medical terms both patients and doctors understand.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Defined 10 record sections</strong> with executives, refined with a short user survey.</span></li>
+                <li><span><strong>Every flow</strong> includes empty states, add / search / filter, configuration, and PDF outputs.</span></li>
+                <li><span><strong>Refined the IA</strong> into 7 main sections, with Records and Get care as the deepest.</span></li>
+                <li><span><strong>Responsive</strong> menus for tablet and mobile.</span></li>
+              </ul>
+              <div class="chips-row" style="margin-top: 18px;"><span class="chip">Lab results</span><span class="chip">Allergies</span><span class="chip">Health conditions</span><span class="chip">Immunizations</span><span class="chip">Medications</span><span class="chip">Health records</span><span class="chip">Document center</span><span class="chip">Clinical vitals</span><span class="chip">Procedures</span><span class="chip">Diagnosis images</span></div>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>Task success rate · records</span><span>Fig. G</span></div>
+              <div class="bars" style="--n: 9;">
+                <div class="bar"><span class="v">88%</span><span class="col"><i style="--v: 88%"></i></span><span class="l">Manage</span></div>
+                <div class="bar low"><span class="v">60%</span><span class="col"><i style="--v: 60%"></i></span><span class="l">Labs</span></div>
+                <div class="bar"><span class="v">86%</span><span class="col"><i style="--v: 86%"></i></span><span class="l">Diag. results</span></div>
+                <div class="bar"><span class="v">84%</span><span class="col"><i style="--v: 84%"></i></span><span class="l">Diag. image</span></div>
+                <div class="bar low"><span class="v">75%</span><span class="col"><i style="--v: 75%"></i></span><span class="l">Condit.</span></div>
+                <div class="bar"><span class="v">84%</span><span class="col"><i style="--v: 84%"></i></span><span class="l">Immuniz.</span></div>
+                <div class="bar"><span class="v">88%</span><span class="col"><i style="--v: 88%"></i></span><span class="l">Meds</span></div>
+                <div class="bar"><span class="v">80%</span><span class="col"><i style="--v: 80%"></i></span><span class="l">Proced.</span></div>
+                <div class="bar"><span class="v">94%</span><span class="col"><i style="--v: 94%"></i></span><span class="l">Vitals</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="decision reveal"><span class="mono">Iterate next</span>Lab results (60%) and health conditions (75%) had the most complications, where medical terminology was densest.</div>
+        </section>
+
+        <!-- ===== 05 Launch ===== -->
+        <section class="r-sec" id="launch" data-step="05" data-name="Launch">
+          <div class="r-head"><span class="mono">Step 05 / 05</span><span class="mono">Rollout</span></div>
+          <div class="r-title"><span class="num">05</span><h2>Launch</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Coordinate marketing, technical readiness, and engagement for a seamless rollout.</p>
+
+          <ul class="checks reveal">
+            <li><span><strong>Dev reviews</strong> to evaluate results and integrate new functionality.</span></li>
+            <li><span><strong>400+ screens</strong> designed, with tablet and mobile variations, for consistency and accessibility.</span></li>
+            <li><span><strong>Hospital board approval</strong> secured through a successful demonstration.</span></li>
+            <li><span><strong>Marketing alignment</strong> so promotion matched the platform's benefits.</span></li>
+          </ul>
+          <figure class="shot reveal" style="margin-top: 24px;">
+            <img src="assets/images/projects/baptist/tech/components.png" alt="UI components: doctor card, DAISY nomination, guided care entry, appointment card and pay my bill" loading="lazy">
+            <figcaption><span>Key components</span><span>Fig. H</span></figcaption>
+          </figure>
+        </section>
+
+        <!-- ===== 06 Results ===== -->
+        <section class="r-sec" id="results" data-step="06" data-name="Results">
+          <div class="r-head"><span class="mono">06 · Results</span><span class="mono">iOS · Android · web</span></div>
+          <div class="r-title"><span class="num">06</span><h2>Care, more agile</h2></div>
+          <p class="r-goal"><span class="mono">Outcome</span>PineApp launched on Android and iOS, streamlining appointments and administrative work.</p>
+
+          <div class="cells c4 reveal">
+            <div class="cell"><span class="idx">REACH</span><h4 class="big">3M+</h4><p>Users positively impacted.</p><div class="hbar"><i style="--v: 100%"></i></div></div>
+            <div class="cell"><span class="idx">AGILITY</span><h4 class="big">+69%</h4><p>In medical service delivery.</p><div class="hbar"><i style="--v: 69%"></i></div></div>
+            <div class="cell"><span class="idx">EASE</span><h4 class="big">88%</h4><p>Found the platform easy to use.</p><div class="hbar"><i style="--v: 88%"></i></div></div>
+            <div class="cell tint"><span class="idx">RESPONSIVE</span><h4 class="big">95%</h4><p>Positive experience on mobile and tablet.</p><div class="hbar"><i style="--v: 95%"></i></div></div>
+          </div>
+          <div class="lessons reveal" style="margin-top: 24px;">
+            <div><span>01</span><p><b>30% faster scheduling</b>After interface improvements.</p></div>
+            <div><span>02</span><p><b>90% clear terminology</b>Medical terms were easy to understand.</p></div>
+            <div><span>03</span><p><b>85% easy navigation</b>Navigating and scheduling felt straightforward.</p></div>
+            <div><span>04</span><p><b>Admin agility</b>Digital resource allocation for staff and users.</p></div>
+          </div>
+
+          <div class="reveal" style="margin-top: 32px;">
+            <span class="mono r-sub">Evidence</span>
+            <div class="evidence">
+              <figure><img src="assets/images/projects/baptist/tech/collage.png" alt="Sign-in, home and appointments screens" loading="lazy"><figcaption>Screens</figcaption></figure>
+              <figure><img src="assets/images/projects/baptist/tech/schedule-flow.png" alt="Scheduling flow" loading="lazy"><figcaption>Schedule flow</figcaption></figure>
+              <figure><img src="assets/images/projects/baptist/tech/records-menu.png" alt="Records menu, desktop and mobile" loading="lazy"><figcaption>Records menu</figcaption></figure>
+              <figure><img src="assets/images/projects/baptist/tech/stores.png" alt="PineApp on the App Store and Google Play" loading="lazy"><figcaption>App stores</figcaption></figure>
+            </div>
+          </div>
+
+          <a class="next-case reveal" href="adhio.html">
+            <div><span class="mono">Next case · 06 / 21</span><b>ADHIO</b></div>
+            <span class="arr">&rarr;</span>
+          </a>
+        </section>
+      </article>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="cta-panel reveal">
+          <span class="dot tl"></span><span class="dot tr"></span><span class="dot bl"></span><span class="dot br"></span>
+          <div class="cta-clip">
+            <svg class="iso cta-cal" id="ctaCal" viewBox="0 0 460 340" aria-hidden="true"></svg>
+          </div>
+          <div class="cta-copy">
+            <div class="mono">Contact</div>
+            <h2>Let’s Talk About your Project</h2>
+            <p>Jump into a dynamic exploration and learn how you and your team can endlessly innovate your approach to design sourcing.</p>
+            <a class="btn btn-accent" href="https://calendly.com/fershocastro" target="_blank">Book a Call <span class="arr">&rsaquo;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span class="mono">© 2026 @Fershocastro. All rights reserved</span>
+      <div class="socials">
+        <a target="_blank" rel="nofollow" href="https://www.linkedin.com/in/fershocastro/">LinkedIn</a>
+        <a target="_blank" rel="nofollow" href="https://twitter.com/Fershocastro">Twitter</a>
+        <a target="_blank" rel="nofollow" href="https://dribbble.com/Fershocastro">Dribbble</a>
+        <a target="_blank" rel="nofollow" href="https://www.behance.net/fershocastro">Behance</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/tech-viz.js"></script>
+  <script src="assets/js/tech-case.js"></script>
+</body>
+</html>
