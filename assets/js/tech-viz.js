@@ -37,6 +37,32 @@
       el(svg, 'path', { 'class': 'lead', d: 'M' + c[0] + ' ' + c[1] + ' h18' });
       label(svg, 430, 222, 'AFTER · ONE SYSTEM', 'middle', 'acc');
     },
+    // Centro con un núcleo y módulos alrededor, conectados con flujo animado.
+    hub: function (svg) {
+      var items = (svg.dataset.items || '').split(';'), core = (svg.dataset.core || '').split(';');
+      svg.setAttribute('viewBox', '0 0 520 ' + (250 + core.length * 24));
+      var cx = 260, cy = 125 + core.length * 12;
+      items.forEach(function (n, i) {
+        var a = -Math.PI / 2 + i * 2 * Math.PI / items.length;
+        var x = cx + Math.cos(a) * 205, y = cy + Math.sin(a) * (100 + core.length * 12);
+        el(svg, 'path', { 'class': 'dash', d: 'M' + cx + ' ' + cy + ' L' + x.toFixed(1) + ' ' + y.toFixed(1), style: 'animation-delay:' + (-i * .3) + 's' });
+        var w = n.length * 7 + 16;
+        el(svg, 'rect', { x: (x - w / 2).toFixed(1), y: (y - 11).toFixed(1), width: w, height: 22, 'class': 'hub-node' });
+        label(svg, x, y + 4, n.toUpperCase(), 'middle');
+      });
+      var P = projector(cx, cy + 22);
+      var g = el(svg, 'g', { 'class': 'float' });
+      box(g, P, -38, -38, 0, 76, 76, 22, 'hi');
+      var wc = core.reduce(function (m, c) { return Math.max(m, c.length); }, 0) * 7 + 18;
+      core.forEach(function (c, i) {
+        var y = cy + 46 + i * 24;
+        el(svg, 'rect', { x: cx - wc / 2, y: y - 11, width: wc, height: 22, 'class': 'hub-core' });
+        label(svg, cx, y + 4, c.toUpperCase(), 'middle');
+      });
+      var cw = (svg.dataset.center || '').length * 7.5 + 20;
+      el(svg, 'rect', { x: cx - cw / 2, y: cy - 66, width: cw, height: 22, 'class': 'hub-core' });
+      label(svg, cx, cy - 51, svg.dataset.center || '', 'middle');
+    },
     // Capas de diseño atómico apiladas, con el total al lado.
     layers: function (svg) {
       svg.setAttribute('viewBox', '0 0 500 250');
