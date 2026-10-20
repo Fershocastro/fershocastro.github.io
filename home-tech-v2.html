@@ -65,26 +65,26 @@
     nav a.mono:hover { color: var(--text); }
     .theme-btn {
       background: none; border: 1px solid var(--line); color: var(--text);
-      width: 32px; height: 32px; border-radius: 6px; cursor: pointer;
+      width: 32px; height: 32px; border-radius: 0; cursor: pointer;
       display: grid; place-items: center;
     }
     .theme-btn:hover { border-color: var(--text); }
     .theme-btn svg { width: 15px; height: 15px; }
 
     /* Hero: estilo cuadrícula punteada */
-    :root { --dash: color-mix(in srgb, var(--text) 16%, transparent); }
+    :root { --dash: color-mix(in srgb, var(--text) 16%, transparent); --dash-soft: color-mix(in srgb, var(--text) 8%, transparent); }
     .hero { border-bottom: 1px dashed var(--dash); }
     .hero-frame {
       position: relative; display: grid; grid-template-columns: auto 1fr;
       border-left: 1px dashed var(--dash); border-right: 1px dashed var(--dash);
     }
     .hero-frame::before {
-      content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0;
-      background: repeating-linear-gradient(to bottom, transparent 0 79px, var(--dash) 79px 80px);
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: calc(100% - var(--row, 80px) / 2); pointer-events: none; z-index: 0;
+      background: repeating-linear-gradient(to bottom, transparent 0 calc(var(--row, 80px) - 1px), var(--dash-soft) calc(var(--row, 80px) - 1px) var(--row, 80px));
       -webkit-mask: repeating-linear-gradient(to right, #000 0 4px, transparent 4px 8px);
               mask: repeating-linear-gradient(to right, #000 0 4px, transparent 4px 8px);
     }
-    .hero-copy { position: relative; z-index: 1; padding: clamp(56px, 9vw, 120px) clamp(20px, 3vw, 48px) clamp(56px, 8vw, 104px) clamp(16px, 2vw, 28px); }
+    .hero-copy { position: relative; z-index: 1; padding: clamp(32px, 4vw, 58px) clamp(20px, 3vw, 48px) clamp(28px, 2.8vw, 40px) clamp(16px, 2vw, 28px); }
     .hero-copy > * { background: var(--bg); width: fit-content; }
     .hero-visual { position: relative; z-index: 1; border-left: 1px dashed var(--dash); display: grid; place-items: center; padding: 16px; }
     .hero-visual svg { width: 100%; max-width: 560px; height: auto; overflow: visible; }
@@ -154,11 +154,11 @@
     .sec-head h2 { font-size: clamp(28px, 3.4vw, 40px); font-weight: 500; letter-spacing: -.03em; }
 
     /* Projects */
-    .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+    .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 0; overflow: hidden; }
     .project { background: var(--bg); padding: 20px; display: flex; flex-direction: column; gap: 18px; transition: background .25s; }
     .project:hover { background: var(--surface); }
     .filler { background: var(--bg); }
-    .project .thumb { aspect-ratio: 16 / 10; overflow: hidden; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); }
+    .project .thumb { aspect-ratio: 16 / 10; overflow: hidden; border-radius: 0; border: 1px solid var(--line); background: var(--surface); }
     .project .thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
     .project:hover .thumb img { transform: scale(1.03); }
     .project .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
@@ -195,12 +195,16 @@
       opacity: .6;
     }
     .cta-clip { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
-    .cta-panel .dot { position: absolute; z-index: 2; width: 7px; height: 7px; border-radius: 50%; background: var(--line); border: 1px solid var(--muted); }
+    .cta-panel .dot { position: absolute; z-index: 2; width: 7px; height: 7px; border-radius: 0; background: var(--line); border: 1px solid var(--muted); }
     .cta-panel .dot.tl { top: -4px; left: -4px; } .cta-panel .dot.tr { top: -4px; right: -4px; }
     .cta-panel .dot.bl { bottom: -4px; left: -4px; } .cta-panel .dot.br { bottom: -4px; right: -4px; }
     .cta-copy { position: relative; z-index: 1; max-width: 520px; margin: 0 auto; }
     .contact h2 { font-size: clamp(30px, 3.6vw, 44px); font-weight: 500; letter-spacing: -.035em; line-height: 1.1; margin: 16px 0 20px; }
     .contact p { color: var(--muted); margin: 0 auto 32px; font-size: 17px; max-width: 420px; }
+    /* Botones del header: Book a Call y tema a 31px de alto */
+    header .btn-sm { height: 31px; padding: 0 14px; font-size: 12px; width: auto; }
+    header .theme-btn { width: 31px; height: 31px; border-radius: 0; }
+    header nav { gap: 12px; }
     .btn-accent { background: var(--accent); border-color: var(--accent); color: #0c0c0c; }
     .cta-cal { position: absolute; right: -110px; bottom: -50px; width: 460px; height: auto; z-index: 0; }
     .iso .cal-tile { transition: transform .6s cubic-bezier(.2,.8,.2,1); }
@@ -239,7 +243,11 @@
       .cta-cal { width: 330px; right: -50px; bottom: -30px; }
       .btn { width: 100%; justify-content: center; }
       .hero-copy > * { width: auto; }
-      .hero-actions { flex-direction: column; }
+      .hero-actions { flex-direction: column; margin-top: 24px; }
+      .hero .socials { margin-top: 20px; }
+      .hero-copy { padding-top: 28px; padding-bottom: 28px; }
+      .hero-visual { padding: 12px 8px; }
+      .hero-visual svg { max-width: 260px; }
     }
   </style>
 </head>
@@ -249,11 +257,10 @@
     <div class="wrap">
       <a href="home-tech-v2.html" class="brand">fershocastro<span>_</span></a>
       <nav>
-        <a href="#work" class="mono">Work</a>
-        <a href="#contact" class="mono">Contact</a>
         <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         </button>
+        <a class="btn btn-accent btn-sm" href="https://calendly.com/fershocastro" target="_blank">Book a Call <span class="arr">&rsaquo;</span></a>
       </nav>
     </div>
   </header>
@@ -361,7 +368,7 @@
         '<span class="see">See project <span>&rarr;</span></span>' +
       '</a>';
     }).join('') +
-      '<a class="project more reveal" href="portfolio.html">' +
+      '<a class="project more reveal" href="portfolio-tech.html">' +
         '<div class="thumb"><svg class="iso" id="isoMore" viewBox="0 0 320 200" role="img" aria-label="' + rest.length + ' more projects"></svg></div>' +
         '<div class="meta"><h3>See all projects</h3><span class="mono">' + String(SHOWN + 1).padStart(2, '0') + '–' + total + ' / ' + total + '</span></div>' +
         '<p>' + rest.length + ' more projects, including ' + rest.slice(0, 5).map(function (p) { return p[0]; }).join(', ') + ' and more.</p>' +
@@ -468,8 +475,8 @@
       // Flujo de trabajo con IA (como en la bio)
       var ai = el('g', {});
       tag(392, 452, 'AI WORKFLOW', ai);
-      el('rect', { x: 516, y: 445, width: 24, height: 14, rx: 7, fill: 'none', stroke: 'var(--accent)' }, ai);
-      el('circle', { 'class': 'knob pkt', cx: 523, cy: 452, r: 4.5 }, ai);
+      el('rect', { x: 516, y: 445, width: 24, height: 14, fill: 'none', stroke: 'var(--accent)' }, ai);
+      el('rect', { 'class': 'knob pkt', x: 519, y: 448, width: 8, height: 8 }, ai);
 
       // Fase actual, recorre el proceso
       var phase = tag(18, 40, 'PHASE / STRATEGY', null);
@@ -538,6 +545,16 @@
 
       if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(pick, 2200);
     })();
+
+    // Cuadrícula del hero: filas parejas que cierran justo en el borde inferior
+    function fitGrid() {
+      document.querySelectorAll('.hero-frame').forEach(function (f) {
+        var h = f.getBoundingClientRect().height;
+        f.style.setProperty('--row', (h / Math.max(1, Math.round(h / 80))) + 'px');
+      });
+    }
+    fitGrid();
+    addEventListener('resize', fitGrid);
 
     // Aparición suave al hacer scroll
     var io = new IntersectionObserver(function (entries) {
