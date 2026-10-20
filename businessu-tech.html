@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fershocastro | BusinessU Design System</title>
+  <meta name="author" content="Fershocastro">
+  <meta name="description" content="BusinessU case study: a scalable design system for an e-learning platform, from audit to launch.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Mulish:wght@400;600;800&display=swap">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/tech-case.css">
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <a href="home-tech-v2.html" class="brand">fershocastro<span>_</span></a>
+      <nav>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn-accent btn-sm" href="https://calendly.com/fershocastro" target="_blank">Book a Call <span class="arr">&rsaquo;</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Encabezado del caso ===== -->
+    <section class="case-hero">
+      <div class="wrap">
+        <div class="case-frame">
+          <div class="case-intro">
+            <a class="mono back reveal" href="portfolio-tech.html">&larr; All projects</a>
+            <h1 class="reveal">BusinessU<span class="cursor"></span></h1>
+            <p class="lead reveal">Platform for enhancing learning experiences through a scalable design system.</p>
+          </div>
+          <div class="case-meta reveal">
+            <dl>
+              <div><dt>Year</dt><dd>2026</dd></div>
+              <div><dt>Timeline</dt><dd>Aug – Nov 2025 · 4 months</dd></div>
+              <div><dt>Scope</dt><dd>Design system, tokens, component library</dd></div>
+              <div><dt>Tools</dt><dd>Figma &amp; Design Tokens</dd></div>
+              <div><dt>Categories</dt><dd>EdTech, B2B, B2C</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Barra compacta (mobile) ===== -->
+    <div class="mbar" aria-hidden="true">
+      <div class="wrap" style="position: relative;">
+        <span class="cur"><b>00</b> / 06 · Summary</span>
+        <button class="to-top" type="button" data-top>&uarr; Top</button>
+        <span class="track"><i></i></span>
+      </div>
+    </div>
+
+    <div class="wrap report">
+
+      <!-- ===== Índice lateral ===== -->
+      <aside class="rail" aria-label="Case study progress">
+        <div class="mono head"><span>UX case report</span><span>06 steps</span></div>
+        <ol>
+          <li><a href="#summary"><b>00</b>Summary<span class="fill"><i></i></span></a></li>
+          <li><a href="#foundations"><b>01</b>Foundations<span class="fill"><i></i></span></a></li>
+          <li><a href="#style-guide"><b>02</b>Style guide<span class="fill"><i></i></span></a></li>
+          <li><a href="#components"><b>03</b>Components<span class="fill"><i></i></span></a></li>
+          <li><a href="#testing"><b>04</b>Testing<span class="fill"><i></i></span></a></li>
+          <li><a href="#launch"><b>05</b>Launch<span class="fill"><i></i></span></a></li>
+          <li><a href="#results"><b>06</b>Results<span class="fill"><i></i></span></a></li>
+        </ol>
+        <div class="total">
+          <span class="mono">Read</span>
+          <span class="n">0%</span>
+          <span class="track"><i></i></span>
+        </div>
+        <button class="to-top" type="button" data-top>&uarr; Back to top</button>
+      </aside>
+
+      <article>
+
+        <!-- ===== 00 Summary ===== -->
+        <section class="r-sec" id="summary" data-step="00" data-name="Summary">
+          <div class="r-head"><span class="mono">00 · Executive summary</span><span class="mono">Aug – Nov 2025</span></div>
+          <p class="tldr reveal">A four-month project to turn a fragmented e-learning platform into <em>one scalable design system</em>: shared tokens, a documented library of 35 components, and a governance model the whole team adopted.</p>
+
+          <div class="stats reveal" style="--n: 4;">
+            <div class="stat"><div class="n">4<em>mo</em></div><p>Audit to launch</p></div>
+            <div class="stat"><div class="n">35</div><p>Documented components</p></div>
+            <div class="stat"><div class="n">2<em>×</em>2</div><p>Product themes × display modes</p></div>
+            <div class="stat"><div class="n">87<em>%</em></div><p>Found it significantly easier to work with</p></div>
+          </div>
+
+          <div class="pao reveal">
+            <div><span class="mono">Problem</span><p>Teams designed independently without a shared system, leading to inconsistent experiences across products.</p></div>
+            <div><span class="mono">Approach</span><p>Five planned stages: foundations, style guide, component library, testing, and launch &amp; training.</p></div>
+            <div><span class="mono">Outcome</span><p>A cohesive, scalable system that improved consistency, collaboration, and speed across a growing team.</p></div>
+          </div>
+
+          <div class="r-grid" style="margin-top: 24px;">
+            <div class="reveal">
+              <span class="mono r-sub">Main challenges</span>
+              <ul class="did">
+                <li><span><strong>System &amp; workflow:</strong> duplicated components, detached instances, disconnected files, unclear handoff.</span></li>
+                <li><span><strong>Teams &amp; product:</strong> slower cycles, more errors, limited scalability, product–marketing friction.</span></li>
+                <li><span><strong>Organization:</strong> alignment after the Stukent acquisition, with multiple teams, tools, and workflows to unify.</span></li>
+              </ul>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>From fragments to a system</span><span>Fig. A</span></div>
+              <svg data-viz="fragmented" role="img" aria-label="Loose, duplicated pieces before; one ordered stack after"></svg>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== 01 Foundations ===== -->
+        <section class="r-sec" id="foundations" data-step="01" data-name="Foundations">
+          <div class="r-head"><span class="mono">Step 01 / 05</span><span class="mono">Aug – Sep 2025</span></div>
+          <div class="r-title"><span class="num">01</span><h2>Foundations</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Build a shared language and the structural backbone everything else would depend on.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Audited</strong> every active Figma file to find recurring components, inconsistencies, and organic patterns.</span></li>
+                <li><span><strong>Benchmarked</strong> Material Design, Polaris, and Carbon on documentation, tokens, and architecture.</span></li>
+                <li><span><strong>Planned</strong> a four-month roadmap that aligned stakeholders and positioned the system as a strategic initiative.</span></li>
+                <li><span><strong>Structured</strong> the Figma file and a documentation template every component follows.</span></li>
+              </ul>
+              <div class="decision"><span class="mono">Key decision</span>Every component page shares one template: header, properties, specifications, and component set, so anyone can understand how and when to use it.</div>
+            </div>
+            <div>
+              <div class="viz reveal">
+                <div class="mono cap"><span>Discovery to structure</span><span>Fig. B</span></div>
+                <div class="hflow" style="--n: 3;">
+                  <div class="node"><b>Inputs</b><span>Internal audit + benchmarks</span><div class="stack-list"><span>Figma files</span><span>Material · Polaris · Carbon</span></div></div>
+                  <div class="node"><b>Action plan</b><span>Evidence-based, 4-month roadmap</span></div>
+                  <div class="node on"><b>Figma file</b><span>Five sections</span><div class="stack-list"><span>Introduction</span><span>How it works</span><span>Brand UI kit</span><span>Style guide &amp; tokens</span><span>Components</span></div></div>
+                </div>
+              </div>
+              <div class="viz reveal">
+                <div class="mono cap"><span>Roadmap · Aug – Nov 2025</span><span>Fig. C</span></div>
+                <div class="mgantt">
+                  <span class="m">Aug</span><span class="m">Sep</span><span class="m">Oct</span><span class="m">Nov</span>
+                  <span class="b now" style="grid-column: 1 / 4;">01 Foundations</span>
+                  <span class="b" style="grid-column: 3 / 6;">02 Style guide</span>
+                  <span class="b" style="grid-column: 5 / 8;">03 Components</span>
+                  <span class="b" style="grid-column: 7 / 9;">04 Rollout</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="outputs reveal"><span class="mono">Outputs</span><span class="chip">Audit</span><span class="chip">Benchmark</span><span class="chip">Roadmap</span><span class="chip">Figma architecture</span><span class="chip on">Doc template</span></div>
+        </section>
+
+        <!-- ===== 02 Style guide ===== -->
+        <section class="r-sec" id="style-guide" data-step="02" data-name="Style guide">
+          <div class="r-head"><span class="mono">Step 02 / 05</span><span class="mono">Sep – Oct 2025</span></div>
+          <div class="r-title"><span class="num">02</span><h2>Style guide</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Standardize brand, color, type, grids, and effects as functional decisions, not just visual ones.</p>
+
+          <div class="viz reveal">
+            <div class="mono cap"><span>Token architecture · category · property · variant · state</span><span>Fig. D</span></div>
+            <div class="hflow" style="--n: 4;">
+              <div class="node"><b>Primitive</b><span>Color, type, spacing, radius</span></div>
+              <div class="node"><b>Semantic</b><span>Brand, feedback, surface, type</span></div>
+              <div class="node on"><b>Product themes</b><span>Business U · Mimic App<br>Light · Dark</span></div>
+              <div class="node"><b>Components</b><span>Buttons, forms, + more</span></div>
+            </div>
+            <div class="spec3">
+              <div><span class="mono">Typography · Mulish</span><span class="aa">Aa</span></div>
+              <div><span class="mono">Brand + product colors</span>
+                <div class="pal"><i style="background:#2264f2"></i><i style="background:#122a3a"></i><i style="background:#6397d0"></i><i style="background:#d42525"></i><i style="background:#2a8461"></i><i style="background:#2863c9"></i><i style="background:#373e4a"></i><i style="background:#ffb500"></i></div>
+                <div class="ramp7"><i style="background:#f6f9ff"></i><i style="background:#bcceee"></i><i style="background:#9cb7e6"></i><i style="background:#6f96db"></i><i style="background:#5381d4"></i><i style="background:#2862c9"></i><i style="background:#2459b7"></i></div>
+              </div>
+              <div><span class="mono">3 breakpoints</span>
+                <div class="bp"><div style="width:58%"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div style="width:28%;height:80%"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div style="width:14%;height:62%"><i></i><i></i><i></i><i></i></div></div>
+                <span class="mono">1440 · 768 · 375</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="r-grid even" style="margin-top: 24px;">
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Rebuilt brand assets</strong> from Adobe XD: logo variations, Material icons, and usage rules with marketing.</span></li>
+                <li><span><strong>Layered tokens</strong> (primitive → semantic) to power two products and two modes from one foundation.</span></li>
+                <li><span><strong>Chose Mulish</strong> for its high x-height and rounded forms that reduce load in long reading sessions.</span></li>
+                <li><span><strong>Catalogued effects</strong> (elevations, blurs) and tested each one against accessibility standards.</span></li>
+              </ul>
+            </div>
+            <div class="reveal">
+              <div class="decision" style="margin-top: 0;"><span class="mono">Key decision</span>Exactly three breakpoints. More would add maintenance without a real UX gain; fewer would leave layout gaps. Desktop leads, but tablet and mobile are first-class.</div>
+              <div class="decision"><span class="mono">Key decision</span>Built for two products from day one, avoiding a system made for one context and stretched to fit another.</div>
+            </div>
+          </div>
+          <div class="outputs reveal"><span class="mono">Outputs</span><span class="chip">Brand UI kit</span><span class="chip on">Token system · 4 configs</span><span class="chip">Type scale</span><span class="chip">Color palettes</span><span class="chip">Grids</span><span class="chip">Effects</span></div>
+        </section>
+
+        <!-- ===== 03 Components ===== -->
+        <section class="r-sec" id="components" data-step="03" data-name="Components">
+          <div class="r-head"><span class="mono">Step 03 / 05</span><span class="mono">Oct – Nov 2025</span></div>
+          <div class="r-title"><span class="num">03</span><h2>Component library</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Decide what to build, in what order, and why, so the library rests on evidence rather than assumption.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Inventoried</strong> components across Figma and Adobe XD, and reviewed Fluent, MUI, and Fiori.</span></li>
+                <li><span><strong>Ran a gap analysis</strong>: nothing was built without a documented gap, redundancy, or product need.</span></li>
+                <li><span><strong>Delivered in three rounds</strong>, atoms first, each with Figma testing, accessibility validation, and annotations.</span></li>
+                <li><span><strong>Made accessibility a requirement</strong> with an external expert: WCAG 2.1 AA, keyboard, contrast per theme and mode.</span></li>
+              </ul>
+              <div class="decision"><span class="mono">Key decision</span>The final count wasn't set in advance. It emerged from the gap analysis, both products' needs, and dev-validated scope.</div>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>Atomic delivery</span><span>Fig. E</span></div>
+              <svg data-viz="layers" data-layers="Atoms|Round 01 · 10 items;Molecules|Round 02 · 10 items;Organisms|Round 03" data-total="35" role="img" aria-label="Three stacked rounds: atoms, molecules, organisms, totaling 35 components"></svg>
+              <div class="hflow" style="--n: 4; margin-top: 16px;">
+                <div class="node"><b>Discover</b><span>Need, frequency</span></div>
+                <div class="node"><b>Align</b><span>Stakeholders &amp; dev</span></div>
+                <div class="node"><b>Design &amp; test</b><span>Variants, states</span></div>
+                <div class="node on"><b>Iterate</b><span>Logged feedback ↺</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="outputs reveal"><span class="mono">Outputs</span><span class="chip on">35 components</span><span class="chip">WCAG 2.1 AA</span><span class="chip">Annotations</span><span class="chip">Decision log</span></div>
+        </section>
+
+        <!-- ===== 04 Testing ===== -->
+        <section class="r-sec" id="testing" data-step="04" data-name="Testing">
+          <div class="r-head"><span class="mono">Step 04 / 05</span><span class="mono">Per delivery round</span></div>
+          <div class="r-title"><span class="num">04</span><h2>Testing</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Validate the system under real conditions, across teams, roles, and contexts, before it reached production.</p>
+
+          <div class="r-grid even">
+            <div class="viz reveal">
+              <div class="mono cap"><span>Higher acceptance and use</span><span>Fig. F</span></div>
+              <div class="big-n"><span class="n">87%</span><span class="mono">of participants</span></div>
+              <div class="dots100" data-value="87" role="img" aria-label="87 of 100 squares filled"></div>
+              <p style="margin-top: 14px; font-size: 14px; color: var(--muted);">Rated the library significantly easier to work with than the previous fragmented workflow, across all workshop rounds.</p>
+            </div>
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Workshops with 15 designers</strong>, remote and in person, per round, in QA environments close to production.</span></li>
+                <li><span><strong>Scenario-based tasks</strong> on consistency, usability, and brand, logged live and synthesized in debriefs.</span></li>
+                <li><span><strong>Dev testing</strong> on feasibility, token usage, and responsiveness, with KPIs for consistency, efficiency, and adoption.</span></li>
+                <li><span><strong>WCAG 2.1 AA diagnostics</strong> by an external expert, logged per component and prioritized by severity.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="viz reveal" style="margin-top: 24px;">
+            <div class="mono cap"><span>Feedback triage · workshops + Google Forms</span><span>Fig. G</span></div>
+            <div class="hflow" style="--n: 5;">
+              <div class="node"><b>Detected</b><span>Bug, gap, idea</span></div>
+              <div class="node"><b>Logged</b><span>UAT sheet</span></div>
+              <div class="node"><b>Reviewed</b><span>Live retro or async form</span></div>
+              <div class="node"><b>Delegated</b><span>UX designer</span></div>
+              <div class="node"><b>Sent to dev</b><span>Specs + criteria</span></div>
+            </div>
+            <div class="fc-out" style="margin: 14px 0 0;">
+              <div><span class="mono">Proceed</span><div class="fc-node go"><b>Release 1</b><span>Ship now</span></div></div>
+              <div><span class="mono">Defer</span><div class="fc-node defer"><b>Release 2</b><span>Next version</span></div></div>
+              <div><span class="mono">Discard</span><div class="fc-node drop"><b>Out of scope</b><span>Logged</span></div></div>
+            </div>
+          </div>
+
+          <div class="r-grid even" style="margin-top: 24px;">
+            <div class="reveal">
+              <span class="mono r-sub">Problems found → solutions</span>
+              <div class="fixes">
+                <div><b>Inconsistent naming</b><span>→</span><span>Standardized structure + naming guide</span></div>
+                <div><b>Missing states</b><span>→</span><span>Mandatory checklist, gaps filled</span></div>
+                <div><b>Spacing not tokenized</b><span>→</span><span>Redlines linked to tokens</span></div>
+                <div><b>Unclear docs</b><span>→</span><span>Plain-language summaries + quick guide</span></div>
+              </div>
+            </div>
+            <div class="reveal">
+              <span class="mono r-sub">What the team said</span>
+              <div class="q2" style="margin-top: 0; grid-template-columns: 1fr;">
+                <blockquote><p>Having a single source of truth for components cut my design time in half on the last sprint.</p><cite>Andrea M. · Senior Product Designer</cite></blockquote>
+                <blockquote><p>For the first time I didn't have to ask the designer what color to use for a disabled state. It was just there.</p><cite>Carlos R. · Frontend Developer</cite></blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== 05 Launch ===== -->
+        <section class="r-sec" id="launch" data-step="05" data-name="Launch">
+          <div class="r-head"><span class="mono">Step 05 / 05</span><span class="mono">Nov 2025</span></div>
+          <div class="r-title"><span class="num">05</span><h2>Launch &amp; training</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Ship a system that is structured, governed, and actually adopted from day one.</p>
+
+          <div class="r-grid even">
+            <div class="reveal">
+              <span class="mono r-sub">Nothing ships without a sign-off</span>
+              <ul class="checks">
+                <li><span><strong>Validation</strong> with devs, the accessibility consultant, and designers; every critical issue had an owner.</span></li>
+                <li><span><strong>Documentation</strong> reviewed and kept as the single source of truth inside Figma.</span></li>
+                <li><span><strong>Go-live</strong> set to a specific date and time, marking the move from build to use.</span></li>
+              </ul>
+              <div class="decision"><span class="mono">Key decision</span>Editor access only for the core design team; developers and marketing as viewers, to inspect without breaking it.</div>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>Governance</span><span>Fig. H</span></div>
+              <div class="lanes" style="border: 0; background: none; gap: 10px;">
+                <div class="lane" style="padding: 0; background: none;"><span class="mono">Structure</span><div class="fc-node"><b>Master library</b><span>Feature files · Sandbox</span></div><div class="fc-node"><b>Access roles</b><span>Editors · Viewers</span></div></div>
+                <div class="lane" style="padding: 0; background: none;"><span class="mono">Publish</span><div class="fc-node"><b>Design in Figma</b></div><div class="fc-node"><b>Checkpoints</b><span>UX · A11y · Tech spec</span></div></div>
+                <div class="lane" style="padding: 0; background: none;"><span class="mono">Track</span><div class="fc-node"><b>Insertions</b></div><div class="fc-node"><b>Dashboard</b><span>Figma analytics</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="viz reveal" style="margin-top: 24px;">
+            <div class="mono cap"><span>Training and adoption</span><span>Fig. I</span></div>
+            <div class="tline">
+              <div><b>Training</b>Sessions per discipline: design, dev, marketing</div>
+              <div><b>Go-live review</b>Questions answered in real time on launch day</div>
+              <div><b>Months 1–2</b>Monthly check-ins on adoption data and friction</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== 06 Results ===== -->
+        <section class="r-sec" id="results" data-step="06" data-name="Results">
+          <div class="r-head"><span class="mono">06 · Results &amp; learnings</span><span class="mono">Post-launch</span></div>
+          <div class="r-title"><span class="num">06</span><h2>Measuring what changed</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Success was defined before launch: design efficiency, adoption confidence, and system health.</p>
+
+          <div class="cells c3 reveal">
+            <div class="cell"><span class="idx">KPI.01</span><h4>Sprint efficiency</h4><p>Less design and dev time on tasks with existing components; less rework and decision overhead.</p></div>
+            <div class="cell"><span class="idx">KPI.02</span><h4>SUS adoption score</h4><p>Surveys at months one and two.</p>
+              <div class="meter"><i></i><span>Target &gt; 80</span></div><div class="meter-scale"><span>0</span><span>100</span></div></div>
+            <div class="cell"><span class="idx">KPI.03</span><h4>Figma usage</h4><p>Insertions, detach rates, and viewer activity to spot where teams work around the system.</p></div>
+          </div>
+
+          <div class="reveal" style="margin-top: 32px;">
+            <span class="mono r-sub">What the process taught us</span>
+            <div class="lessons">
+              <div><span>01</span><p><b>Prioritize research</b>A full audit prevents redundancy.</p></div>
+              <div><span>02</span><p><b>Atomic design</b>Needs strict sequencing to avoid rework.</p></div>
+              <div><span>03</span><p><b>Naming</b>Align token names with dev from day one.</p></div>
+              <div><span>04</span><p><b>Governance</b>A living system needs an owner.</p></div>
+              <div><span>05</span><p><b>Scope creep</b>Flexibility in the process isn't optional.</p></div>
+              <div><span>06</span><p><b>Documentation</b>Is a product in itself.</p></div>
+              <div><span>07</span><p><b>Coordination</b>A team of 15 compressed some feedback windows.</p></div>
+              <div><span>08</span><p><b>Accessibility</b>Remediation delayed two components.</p></div>
+            </div>
+          </div>
+
+          <div class="reveal" style="margin-top: 32px;">
+            <span class="mono r-sub">Evidence</span>
+            <div class="evidence">
+              <figure><img src="assets/images/projects/businessu/tech/workshop.png" alt="Testing workshop" loading="lazy"><figcaption>Workshop</figcaption></figure>
+              <figure><img src="assets/images/projects/businessu/tech/signoff-call.png" alt="Final review session" loading="lazy"><figcaption>Sign-off review</figcaption></figure>
+              <figure><img src="assets/images/projects/businessu/tech/training-room.png" alt="Training session" loading="lazy"><figcaption>Training</figcaption></figure>
+              <figure><img src="assets/images/projects/businessu/tech/figma-file.png" alt="Design system Figma file" loading="lazy"><figcaption>Figma file</figcaption></figure>
+            </div>
+          </div>
+
+          <a class="next-case reveal" href="lucciai.html">
+            <div><span class="mono">Next case · 02 / 21</span><b>LucciAI</b></div>
+            <span class="arr">&rarr;</span>
+          </a>
+        </section>
+      </article>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="cta-panel reveal">
+          <span class="dot tl"></span><span class="dot tr"></span><span class="dot bl"></span><span class="dot br"></span>
+          <div class="cta-clip">
+            <svg class="iso cta-cal" id="ctaCal" viewBox="0 0 460 340" aria-hidden="true"></svg>
+          </div>
+          <div class="cta-copy">
+            <div class="mono">Contact</div>
+            <h2>Let’s Talk About your Project</h2>
+            <p>Jump into a dynamic exploration and learn how you and your team can endlessly innovate your approach to design sourcing.</p>
+            <a class="btn btn-accent" href="https://calendly.com/fershocastro" target="_blank">Book a Call <span class="arr">&rsaquo;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span class="mono">© 2026 @Fershocastro. All rights reserved</span>
+      <div class="socials">
+        <a target="_blank" rel="nofollow" href="https://www.linkedin.com/in/fershocastro/">LinkedIn</a>
+        <a target="_blank" rel="nofollow" href="https://twitter.com/Fershocastro">Twitter</a>
+        <a target="_blank" rel="nofollow" href="https://dribbble.com/Fershocastro">Dribbble</a>
+        <a target="_blank" rel="nofollow" href="https://www.behance.net/fershocastro">Behance</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/tech-viz.js"></script>
+  <script src="assets/js/tech-case.js"></script>
+</body>
+</html>

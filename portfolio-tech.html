@@ -353,9 +353,12 @@
       ['NTT Pass', 'ntt', 'ntt.png', 'Medical app with which you can perform a quick covid test and generate a passport for access to events.']
     ];
     // Todos los proyectos
+    var TECH_CASES = ['businessu'];
     var total = String(projects.length).padStart(2, '0');
     document.getElementById('projects').innerHTML = projects.map(function (p, i) {
-      return '<a class="project reveal" href="' + p[1] + '.html">' +
+      // Casos ya migrados a la plantilla nueva abren su versión "-tech"
+      var href = TECH_CASES.indexOf(p[1]) > -1 ? p[1] + '-tech.html' : p[1] + '.html';
+      return '<a class="project reveal" href="' + href + '">' +
         '<div class="thumb"><img loading="lazy" src="assets/images/' + p[2] + '" alt="' + p[0] + '"></div>' +
         '<div class="meta"><h3>' + p[0] + '</h3><span class="mono">' + String(i + 1).padStart(2, '0') + ' / ' + total + '</span></div>' +
         '<p>' + p[3] + '</p>' +
