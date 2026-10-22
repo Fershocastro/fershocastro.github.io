@@ -206,7 +206,7 @@
     header .theme-btn { width: 31px; height: 31px; border-radius: 0; }
     header nav { gap: 12px; }
     .btn-accent { background: var(--accent); border-color: var(--accent); color: #0c0c0c; }
-    .cta-cal { position: absolute; right: -110px; bottom: -50px; width: 460px; height: auto; z-index: 0; }
+    .cta-cal { position: absolute; right: -110px; bottom: -50px; width: 460px; height: auto; z-index: 0; overflow: visible; }
     .iso .cal-tile { transition: transform .6s cubic-bezier(.2,.8,.2,1); }
     .iso .cal-tile .top { fill: var(--surface); stroke: color-mix(in srgb, var(--accent) 45%, var(--line)); }
     .iso .cal-tile .side, .iso .cal-tile .side2 { fill: color-mix(in srgb, var(--accent) 12%, var(--surface)); stroke: color-mix(in srgb, var(--accent) 45%, var(--line)); }
@@ -371,7 +371,7 @@
         '<span class="see">See project <span>&rarr;</span></span>' +
       '</a>';
     }).join('') +
-      '<a class="project more reveal" href="portfolio-tech.html">' +
+      '<a class="project more reveal" href="portfolio.html">' +
         '<div class="thumb"><svg class="iso" id="isoMore" viewBox="0 0 320 200" role="img" aria-label="' + rest.length + ' more projects"></svg></div>' +
         '<div class="meta"><h3>See all projects</h3><span class="mono">' + String(SHOWN + 1).padStart(2, '0') + '–' + total + ' / ' + total + '</span></div>' +
         '<p>' + rest.length + ' more projects, including ' + rest.slice(0, 5).map(function (p) { return p[0]; }).join(', ') + ' and more.</p>' +
@@ -532,10 +532,20 @@
         tiles.forEach(function (t) { t.classList.remove('pick', 'glow'); });
         // Solo casillas que se ven completas dentro del panel, con espacio para la etiqueta
         var panel = cal.closest('.cta-panel').getBoundingClientRect();
-        var ok = tiles.map(function (t, j) { return j; }).filter(function (j) {
-          var b = tiles[j].getBoundingClientRect();
-          return j !== last && b.left > panel.left + 20 && b.right + 30 < panel.right && b.top - 50 > panel.top && b.bottom + 10 < panel.bottom;
-        });
+        // La etiqueta "BOOK A SLOT" es más ancha que la casilla: se mide completa para que no se corte ni tape el texto
+        var s = cal.getBoundingClientRect().width / 460;
+        var copy = cal.closest('.cta-panel').querySelector('.cta-copy');
+        var c = copy ? copy.getBoundingClientRect() : null;
+        var fits = function (j, avoidCopy) {
+          var b = tiles[j].getBoundingClientRect(), cx = (b.left + b.right) / 2;
+          var L = cx - 56 * s, R = cx + 56 * s, T = b.top - 46 * s, B = b.top - 18 * s;
+          var inPanel = L > panel.left + 12 && R < panel.right - 12 && T > panel.top + 12 && b.bottom + 10 < panel.bottom;
+          var overCopy = c && L < c.right && R > c.left && T < c.bottom && B > c.top;
+          return j !== last && inPanel && !(avoidCopy && overCopy);
+        };
+        var all = tiles.map(function (t, j) { return j; });
+        var ok = all.filter(function (j) { return fits(j, true); });
+        if (!ok.length) ok = all.filter(function (j) { return fits(j, false); });
         if (!ok.length) return;
         var i = ok[Math.floor(Math.random() * ok.length)]; last = i;
         // Dos casillas vecinas se iluminan un momento antes
@@ -574,5 +584,6 @@
     });
   </script>
   <script src="assets/js/cal-embed.js"></script>
+  <script src="assets/js/no-context.js"></script>
 </body>
 </html>

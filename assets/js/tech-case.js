@@ -74,10 +74,20 @@
     var pick = function () {
       tiles.forEach(function (t) { t.classList.remove('pick', 'glow'); });
       var panel = cal.closest('.cta-panel').getBoundingClientRect();
-      var ok = tiles.map(function (t, j) { return j; }).filter(function (j) {
-        var b = tiles[j].getBoundingClientRect();
-        return j !== last && b.left > panel.left + 20 && b.right + 30 < panel.right && b.top - 50 > panel.top && b.bottom + 10 < panel.bottom;
-      });
+      // La etiqueta "BOOK A SLOT" es más ancha que la casilla: se mide completa para que no se corte ni tape el texto
+      var s = cal.getBoundingClientRect().width / 460;
+      var copy = cal.closest('.cta-panel').querySelector('.cta-copy');
+      var c = copy ? copy.getBoundingClientRect() : null;
+      var fits = function (j, avoidCopy) {
+        var b = tiles[j].getBoundingClientRect(), cx = (b.left + b.right) / 2;
+        var L = cx - 56 * s, R = cx + 56 * s, T = b.top - 46 * s, B = b.top - 18 * s;
+        var inPanel = L > panel.left + 12 && R < panel.right - 12 && T > panel.top + 12 && b.bottom + 10 < panel.bottom;
+        var overCopy = c && L < c.right && R > c.left && T < c.bottom && B > c.top;
+        return j !== last && inPanel && !(avoidCopy && overCopy);
+      };
+      var all = tiles.map(function (t, j) { return j; });
+      var ok = all.filter(function (j) { return fits(j, true); });
+      if (!ok.length) ok = all.filter(function (j) { return fits(j, false); });
       if (!ok.length) return;
       var i = ok[Math.floor(Math.random() * ok.length)]; last = i;
       [i - 1, i + cols].forEach(function (j) { if (tiles[j] && j !== i) tiles[j].classList.add('glow'); });
