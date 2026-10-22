@@ -434,7 +434,7 @@ header.site nav { display: flex; align-items: center; gap: 12px; }
 .cta-copy { position: relative; z-index: 1; max-width: 520px; margin: 0 auto; }
 .contact h2 { font-size: clamp(30px, 3.6vw, 44px); font-weight: 500; letter-spacing: -.035em; line-height: 1.1; margin: 16px 0 20px; }
 .contact p { color: var(--muted); margin: 0 auto 32px; font-size: 17px; max-width: 420px; }
-.cta-cal { position: absolute; right: -110px; bottom: -50px; width: 460px; height: auto; }
+.cta-cal { position: absolute; right: -110px; bottom: -50px; width: 460px; height: auto; overflow: visible; }
 
 /* Ilustración isométrica (calendario del contacto) */
 .iso text { font-family: var(--mono); font-size: 12px; letter-spacing: .04em; fill: var(--text); }
