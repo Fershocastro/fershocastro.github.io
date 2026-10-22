@@ -100,7 +100,7 @@
   var totalBar = document.querySelector('.rail .total .track i');
   var mCur = document.querySelector('.mbar .cur');
   var mBar = document.querySelector('.mbar .track i');
-  var fab = document.querySelector('.fab');
+  var fab = document.querySelector('.fab, .float-top');
   var report = document.querySelector('.report');
 
   function update() {
