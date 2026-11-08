@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fershocastro | NoliaHealth Design System</title>
+  <meta name="author" content="Fershocastro">
+  <meta name="description" content="NoliaHealth case study: a scalable design system for a caregiver-focused startup, built and launched in one month.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Urbanist:wght@500;700&display=swap">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/tech-case.css">
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <a href="index.html" class="brand">fershocastro<span>_</span></a>
+      <nav>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn-accent btn-sm" href="https://cal.com/fershocastro/30min" data-cal-link="fershocastro/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' target="_blank">Book a Call <span class="arr">&rsaquo;</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Encabezado del caso ===== -->
+    <section class="case-hero">
+      <div class="wrap">
+        <div class="case-frame spec">
+          <div class="case-intro">
+            <a class="mono back reveal" href="portfolio.html">&larr; All projects</a>
+            <h1 class="reveal">NoliaHealth<span class="cursor"></span></h1>
+            <p class="lead reveal">A design system built in one month to give a caregiver-focused startup one consistent, scalable product language.</p>
+          </div>
+          <div class="case-meta reveal">
+            <dl>
+              <div><dt>Timeline</dt><dd>Oct 15 – Nov 15, 2025 · 1 month</dd></div>
+              <div><dt>Scope</dt><dd>Design system, tokens, component library</dd></div>
+              <div><dt>Sector</dt><dd>HealthTech · Caregiving</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Barra compacta (mobile) ===== -->
+    <div class="mbar" aria-hidden="true">
+      <div class="wrap" style="position: relative;">
+        <span class="cur"><b>00</b> / 06 · Summary</span>
+        <button class="to-top" type="button" data-top>&uarr; Top</button>
+        <span class="track"><i></i></span>
+      </div>
+    </div>
+
+    <div class="wrap report">
+
+      <!-- ===== Índice lateral ===== -->
+      <aside class="rail" aria-label="Case study progress">
+        <a class="to-top" href="portfolio.html">&larr; All projects</a>
+        <div class="mono head"><span>UX case report</span><span>06 steps</span></div>
+        <ol>
+          <li><a href="#summary"><b>00</b>Summary<span class="fill"><i></i></span></a></li>
+          <li><a href="#foundations"><b>01</b>Foundations<span class="fill"><i></i></span></a></li>
+          <li><a href="#style-guide"><b>02</b>Style guide<span class="fill"><i></i></span></a></li>
+          <li><a href="#components"><b>03</b>Components<span class="fill"><i></i></span></a></li>
+          <li><a href="#testing"><b>04</b>Testing<span class="fill"><i></i></span></a></li>
+          <li><a href="#launch"><b>05</b>Launch<span class="fill"><i></i></span></a></li>
+          <li><a href="#results"><b>06</b>Results<span class="fill"><i></i></span></a></li>
+        </ol>
+        <div class="total">
+          <span class="mono">Read</span>
+          <span class="n">0%</span>
+          <span class="track"><i></i></span>
+        </div>
+      </aside>
+
+      <article>
+
+        <!-- ===== 00 Summary ===== -->
+        <section class="r-sec" id="summary" data-step="00" data-name="Summary">
+          <div class="r-head"><span class="mono">00 · Executive summary</span><span class="mono">Oct – Nov 2025</span></div>
+          <p class="tldr reveal">Nolia, a caregiver-focused startup preparing to scale and attract investment, had incomplete foundations and inconsistent products. In one month we delivered <em>one design system</em>: brand, tokens, 27 documented components, and a governance model the team could adopt.</p>
+
+          <div class="stats reveal" style="--n: 4;">
+            <div class="stat"><div class="n">1<em>mo</em></div><p>From kickoff to launch</p></div>
+            <div class="stat"><div class="n">27</div><p>Documented components</p></div>
+            <div class="stat"><div class="n">3</div><p>Workshop rounds</p></div>
+            <div class="stat"><div class="n">8</div><p>Team members in testing, all aligned</p></div>
+          </div>
+
+          <div class="pao reveal">
+            <div><span class="mono">Problem</span><p>Early design system efforts were incomplete, so landing pages and mobile apps drifted apart in look, behavior, and code.</p></div>
+            <div><span class="mono">Approach</span><p>Five planned stages: foundations, style guide, component library, testing, and launch &amp; training.</p></div>
+            <div><span class="mono">Outcome</span><p>A single source of truth that improved consistency, design–dev collaboration, and delivery speed.</p></div>
+          </div>
+
+          <div class="r-grid" style="margin-top: 24px;">
+            <div class="reveal">
+              <span class="mono r-sub">Main challenges</span>
+              <ul class="did">
+                <li><span><strong>System:</strong> duplicate components with slight variations, plus visual and interaction inconsistencies.</span></li>
+                <li><span><strong>Workflow:</strong> inefficient dev cycles and an unclear design-to-development handoff.</span></li>
+                <li><span><strong>Team:</strong> misalignment led developers to solve things on their own, hurting quality and brand perception.</span></li>
+                <li><span><strong>Constraint:</strong> everything had to be defined and delivered within one month, with limited resources.</span></li>
+              </ul>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>From fragments to a system</span><span>Fig. A</span></div>
+              <svg data-viz="fragmented" role="img" aria-label="Loose, duplicated pieces before; one ordered stack after"></svg>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== 01 Foundations ===== -->
+        <section class="r-sec" id="foundations" data-step="01" data-name="Foundations">
+          <div class="r-head"><span class="mono">Step 01 / 05</span><span class="mono">Oct 2025</span></div>
+          <div class="r-title"><span class="num">01</span><h2>Foundations</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>With little time and few resources, set clear structures, align stakeholders, and create a workflow ready for design and development from day one.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Aligned</strong> priorities, constraints, and expectations with stakeholders and two developers in working sessions.</span></li>
+                <li><span><strong>Audited</strong> the landing pages and mobile apps to find inconsistencies, duplicated components, and gaps.</span></li>
+                <li><span><strong>Benchmarked</strong> existing libraries, not to adopt them, but to map component properties and define a custom approach.</span></li>
+                <li><span><strong>Planned</strong> weekly deliveries covering design, dev handoff, demos, and documentation, prioritized by stakeholder input.</span></li>
+              </ul>
+              <div class="decision"><span class="mono">Key decision</span>Edit access only for the product designer and two developers; stakeholders got comment access to give feedback asynchronously.</div>
+            </div>
+            <div>
+              <div class="viz reveal">
+                <div class="mono cap"><span>Discovery to structure</span><span>Fig. B</span></div>
+                <div class="hflow" style="--n: 3;">
+                  <div class="node"><b>Alignment</b><span>Stakeholders + 2 developers</span></div>
+                  <div class="node"><b>Audit</b><span>Landing pages, mobile apps, benchmark</span></div>
+                  <div class="node on"><b>Figma master file</b><span>Four sections</span><div class="stack-list"><span>Introduction</span><span>How it works</span><span>Style guide</span><span>Component library</span></div></div>
+                </div>
+              </div>
+              <div class="viz reveal">
+                <div class="mono cap"><span>Every component page · same template</span><span>Fig. C</span></div>
+                <div class="hflow" style="--n: 4;">
+                  <div class="node"><b>Description</b><span>Purpose, context, behavior</span></div>
+                  <div class="node"><b>Specifications</b><span>Spacing, sizes, states, rules</span></div>
+                  <div class="node"><b>Component set</b><span>Ready-to-use variants</span></div>
+                  <div class="node on"><b>Master</b><span>Hidden · do not edit</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="outputs reveal"><span class="mono">Outputs</span><span class="chip">Stakeholder alignment</span><span class="chip">Audit</span><span class="chip">Benchmark</span><span class="chip">Weekly plan</span><span class="chip on">Figma master file</span></div>
+        </section>
+
+        <!-- ===== 02 Style guide ===== -->
+        <section class="r-sec" id="style-guide" data-step="02" data-name="Style guide">
+          <div class="r-head"><span class="mono">Step 02 / 05</span><span class="mono">Oct 2025</span></div>
+          <div class="r-title"><span class="num">02</span><h2>Style guide</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Translate the brand into one visual and communicative system: voice, assets, typography, and tokens.</p>
+
+          <div class="viz reveal">
+            <div class="mono cap"><span>Token strategy · system-first</span><span>Fig. D</span></div>
+            <div class="hflow" style="--n: 4;">
+              <div class="node"><b>Primitive</b><span>Color, spacing, type sizes, radii</span></div>
+              <div class="node"><b>Semantic</b><span>Primary, success, error</span></div>
+              <div class="node on"><b>Responsive modes</b><span>Desktop · Mobile</span></div>
+              <div class="node"><b>Components</b><span>Buttons, forms, + more</span></div>
+            </div>
+            <div class="spec3">
+              <div><span class="mono">Typography · Urbanist</span><span class="aa" style="font-family: 'Urbanist', var(--sans); font-weight: 700;">Aa</span></div>
+              <div><span class="mono">Brand + secondary colors</span>
+                <div class="pal"><i style="background:#232429"></i><i style="background:#a4b5cc"></i><i style="background:#87603f"></i><i style="background:#536d94"></i><i style="background:#226147"></i><i style="background:#8ecf98"></i><i style="background:#e8b9af"></i><i style="background:#ff7c77"></i></div>
+                <div class="ramp7"><i style="background:#eef6ef"></i><i style="background:#c9e6ce"></i><i style="background:#a9dab1"></i><i style="background:#8ecf98"></i><i style="background:#6fa97a"></i><i style="background:#4f7f5a"></i><i style="background:#344a3b"></i></div>
+              </div>
+              <div><span class="mono">3 breakpoints</span>
+                <div class="bp"><div style="width:58%"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div style="width:28%;height:80%"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div style="width:14%;height:62%"><i></i><i></i><i></i><i></i></div></div>
+                <span class="mono">Desktop · Tablet · Mobile</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="r-grid even" style="margin-top: 24px;">
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Defined the voice:</strong> empathetic, clear, and trustworthy, for caregivers dealing with ongoing health challenges.</span></li>
+                <li><span><strong>Refined brand assets</strong> through the move from Magnolia to Nolia Health, with logo variations and Fluent as the icon base.</span></li>
+                <li><span><strong>Secured imagery</strong> with a curated library and a Getty Images license for compliant use.</span></li>
+                <li><span><strong>Chose Urbanist</strong> for its clean, rounded geometry: legible at any size, warm in tone.</span></li>
+                <li><span><strong>Standardized effects:</strong> overlay opacity levels for focus and shadow levels for hierarchy and depth.</span></li>
+              </ul>
+            </div>
+            <div class="reveal">
+              <div class="decision" style="margin-top: 0;"><span class="mono">Key decision</span>Desktop-first grid, since the product's operational and admin workflows live there; mobile keeps key patterns usable, and tablet works as an adaptive bridge instead of a separate pattern set.</div>
+              <div class="decision"><span class="mono">Key decision</span>Before building any component, the voice was defined first: language that is human, calm, and reassuring, never clinically cold.</div>
+            </div>
+          </div>
+          <div class="outputs reveal"><span class="mono">Outputs</span><span class="chip">Tone of voice</span><span class="chip">Brand assets</span><span class="chip on">Token system</span><span class="chip">Type scale</span><span class="chip">Color palette</span><span class="chip">Grids</span><span class="chip">Effects</span></div>
+        </section>
+
+        <!-- ===== 03 Components ===== -->
+        <section class="r-sec" id="components" data-step="03" data-name="Components">
+          <div class="r-head"><span class="mono">Step 03 / 05</span><span class="mono">Oct – Nov 2025</span></div>
+          <div class="r-title"><span class="num">03</span><h2>Component library</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Turn the style guide into reusable components, delivering the most critical ones first within the timeline.</p>
+
+          <div class="r-grid">
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Evaluated</strong> each component for need, usage frequency, and cross-product use before any design work.</span></li>
+                <li><span><strong>Balanced effort and complexity:</strong> quick wins first, higher-effort components for later stages.</span></li>
+                <li><span><strong>Ran parallel workstreams</strong> so design and development could move at the same time.</span></li>
+                <li><span><strong>Built in accessibility:</strong> WCAG 2.1 AA, keyboard and screen reader support, contrast per theme and mode, annotations in each doc.</span></li>
+              </ul>
+              <div class="decision"><span class="mono">Key decision</span>The list stayed open: four components were added from ongoing reviews and product needs, so the system answered real needs rather than predefined assumptions.</div>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>Atomic delivery</span><span>Fig. E</span></div>
+              <svg data-viz="layers" data-layers="Atoms|Round 01;Molecules|Round 02;Organisms|Round 03" data-total="27" role="img" aria-label="Three stacked rounds: atoms, molecules, organisms, totaling 27 components"></svg>
+              <div class="hflow" style="--n: 4; margin-top: 16px;">
+                <div class="node"><b>Discover</b><span>Need, frequency</span></div>
+                <div class="node"><b>Align</b><span>Stakeholders &amp; dev</span></div>
+                <div class="node"><b>Design &amp; test</b><span>Variants, states</span></div>
+                <div class="node on"><b>Iterate</b><span>Logged feedback ↺</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="outputs reveal"><span class="mono">Outputs</span><span class="chip on">27 components</span><span class="chip">WCAG 2.1 AA</span><span class="chip">Annotations</span><span class="chip">Decision record</span></div>
+        </section>
+
+        <!-- ===== 04 Testing ===== -->
+        <section class="r-sec" id="testing" data-step="04" data-name="Testing">
+          <div class="r-head"><span class="mono">Step 04 / 05</span><span class="mono">3 workshop rounds</span></div>
+          <div class="r-title"><span class="num">04</span><h2>Testing</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Make sure components were not only consistent, but also usable and technically feasible, before the final rollout.</p>
+
+          <div class="r-grid even">
+            <div class="viz reveal">
+              <div class="mono cap"><span>Adoption &amp; feedback</span><span>Fig. F</span></div>
+              <div class="big-n"><span class="n">8 / 8</span><span class="mono">participants</span></div>
+              <p style="margin-top: 14px; font-size: 14px; color: var(--muted);">Despite the small sample, results were consistent: every team member in the workshops showed alignment and overall satisfaction with the system. The words they used most: <em>structured</em> and <em>predictable</em>.</p>
+            </div>
+            <div class="reveal">
+              <span class="mono r-sub">What we did</span>
+              <ul class="did">
+                <li><span><strong>Remote workshops</strong> simulating real use, with a stakeholder, a developer, and a product designer.</span></li>
+                <li><span><strong>Live component testing</strong> to observe behavior, usability, and interaction patterns in real time.</span></li>
+                <li><span><strong>Technical validation</strong> by developers to flag implementation issues early.</span></li>
+                <li><span><strong>Accessibility checks</strong> on readability, contrast, and interaction clarity.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="viz reveal" style="margin-top: 24px;">
+            <div class="mono cap"><span>Insights process · per workshop round</span><span>Fig. G</span></div>
+            <div class="hflow" style="--n: 5;">
+              <div class="node"><b>Workshop</b><span>Small group discussion</span></div>
+              <div class="node"><b>Notes</b><span>Live capture of insights</span></div>
+              <div class="node"><b>Categorize</b><span>Labeled clusters</span></div>
+              <div class="node on"><b>Prioritize</b><span>Key insights first</span></div>
+              <div class="node"><b>Iterate</b><span>Component improvements ↺</span></div>
+            </div>
+          </div>
+
+          <div class="r-grid even" style="margin-top: 24px;">
+            <div class="reveal">
+              <span class="mono r-sub">Problems found → solutions</span>
+              <div class="fixes">
+                <div><b>Speed vs. depth</b><span>→</span><span>Short rounds with focused validation</span></div>
+                <div><b>Property conflicts</b><span>→</span><span>Adjusted for stability and predictability</span></div>
+                <div><b>Hard-to-read Figma file</b><span>→</span><span>Clearer structure for developers</span></div>
+                <div><b>Docs too complex</b><span>→</span><span>Simplified guidelines</span></div>
+              </div>
+            </div>
+            <div class="reveal">
+              <span class="mono r-sub">What the team said</span>
+              <div class="q2" style="margin-top: 0; grid-template-columns: 1fr;">
+                <blockquote><p>The components feel consistent and easy to reuse across different scenarios, and it significantly reduces the ambiguity we previously had.</p><cite>Alice B. · Stakeholder</cite></blockquote>
+                <blockquote><p>I really like how tokens are already integrated into the components, because it makes the transition from design to code much more straightforward.</p><cite>Mario V. · Frontend Developer</cite></blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== 05 Launch ===== -->
+        <section class="r-sec" id="launch" data-step="05" data-name="Launch">
+          <div class="r-head"><span class="mono">Step 05 / 05</span><span class="mono">Nov 2025</span></div>
+          <div class="r-title"><span class="num">05</span><h2>Launch &amp; training</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Not only deliver the system, but make sure teams actually adopt it.</p>
+
+          <div class="r-grid even">
+            <div class="reveal">
+              <span class="mono r-sub">Final validation · Round 3</span>
+              <ul class="checks">
+                <li><span><strong>Component refinement</strong> on edge cases, interaction states, and responsiveness.</span></li>
+                <li><span><strong>Documentation alignment</strong> to simplify guidelines for designers and developers.</span></li>
+                <li><span><strong>Cross-functional reviews</strong> with stakeholders and developers on usability and feasibility.</span></li>
+              </ul>
+              <div class="decision"><span class="mono">Key decision</span>The Figma master file is the single source of truth; changes go through a propose, review, approve flow and are tracked by version.</div>
+            </div>
+            <div class="viz reveal">
+              <div class="mono cap"><span>Governance</span><span>Fig. H</span></div>
+              <div class="lanes" style="border: 0; background: none; gap: 10px;">
+                <div class="lane" style="padding: 0; background: none;"><span class="mono">Source</span><div class="fc-node"><b>Figma master file</b><span>Components · Styles · Assets</span></div><div class="fc-node"><b>Documentation</b><span>GitHub · Handoff</span></div></div>
+                <div class="lane" style="padding: 0; background: none;"><span class="mono">Contribute</span><div class="fc-node"><b>Propose</b></div><div class="fc-node"><b>Review · Approve</b></div></div>
+                <div class="lane" style="padding: 0; background: none;"><span class="mono">Maintain</span><div class="fc-node"><b>Versioning</b><span>v1.0 · v2.0 · v3.0</span></div><div class="fc-node"><b>Communicate</b><span>Updates across teams</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="viz reveal" style="margin-top: 24px;">
+            <div class="mono cap"><span>Training and adoption</span><span>Fig. I</span></div>
+            <div class="tline">
+              <div><b>Materials</b>Supporting docs: about the system and how to apply it</div>
+              <div><b>2 sessions</b>Hands-on training on component usage and real scenarios</div>
+              <div><b>Next</b>AI integration with the system under discussion</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== 06 Results ===== -->
+        <section class="r-sec" id="results" data-step="06" data-name="Results">
+          <div class="r-head"><span class="mono">06 · Results &amp; learnings</span><span class="mono">Post-launch</span></div>
+          <div class="r-title"><span class="num">06</span><h2>Measuring what changed</h2></div>
+          <p class="r-goal"><span class="mono">Goal</span>Track adoption, efficiency, and overall impact of the system with defined KPIs.</p>
+
+          <div class="cells c3 reveal">
+            <div class="cell"><span class="idx">KPI.01</span><h4>Component detach rate</h4><p>How often components are detached, pointing to usability or flexibility issues.</p></div>
+            <div class="cell"><span class="idx">KPI.02</span><h4>Component usage rate</h4><p>How often components are reused across products, reflecting adoption.</p></div>
+            <div class="cell"><span class="idx">KPI.03</span><h4>Delivery time reduction</h4><p>Design and development speed gains after the system went live.</p></div>
+          </div>
+
+          <div class="reveal" style="margin-top: 32px;">
+            <span class="mono r-sub">What the process taught us</span>
+            <div class="lessons">
+              <div><span>01</span><p><b>Early alignment</b>Reduces rework and misalignment.</p></div>
+              <div><span>02</span><p><b>Start simple</b>Core components first, then scale.</p></div>
+              <div><span>03</span><p><b>Documentation</b>Drives adoption as much as components.</p></div>
+              <div><span>04</span><p><b>Design–dev</b>Constant collaboration cuts friction.</p></div>
+              <div><span>05</span><p><b>Flexibility</b>Adapt without losing consistency.</p></div>
+              <div><span>06</span><p><b>Real testing</b>Reveals gaps design alone hides.</p></div>
+              <div><span>07</span><p><b>Time limits</b>Force high-impact decisions.</p></div>
+              <div><span>08</span><p><b>Governance</b>Without owners, systems degrade.</p></div>
+            </div>
+          </div>
+
+          <div class="reveal" style="margin-top: 32px;">
+            <span class="mono r-sub">Evidence</span>
+            <div class="evidence">
+              <figure><img src="assets/images/projects/noliahealth/tech/workshop.png" alt="Remote testing workshop" loading="lazy"><figcaption>Workshop</figcaption></figure>
+              <figure><img src="assets/images/projects/noliahealth/tech/final-review.png" alt="Final validation session" loading="lazy"><figcaption>Final validation</figcaption></figure>
+              <figure><img src="assets/images/projects/noliahealth/tech/training-doc.png" alt="Training material: about the system" loading="lazy"><figcaption>Training</figcaption></figure>
+              <figure><img src="assets/images/projects/noliahealth/tech/figma-file.png" alt="Design system Figma master file" loading="lazy"><figcaption>Figma file</figcaption></figure>
+            </div>
+          </div>
+
+          <a class="next-case reveal" href="businessu-tech.html">
+            <div><span class="mono">Next case · 02 / 22</span><b>BusinessU</b></div>
+            <span class="arr">&rarr;</span>
+          </a>
+        </section>
+      </article>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="cta-panel reveal">
+          <span class="dot tl"></span><span class="dot tr"></span><span class="dot bl"></span><span class="dot br"></span>
+          <div class="cta-clip">
+            <svg class="iso cta-cal" id="ctaCal" viewBox="0 0 460 340" aria-hidden="true"></svg>
+          </div>
+          <div class="cta-copy">
+            <div class="mono">Contact</div>
+            <h2>Let’s Talk About your Project</h2>
+            <p>Jump into a dynamic exploration and learn how you and your team can endlessly innovate your approach to design sourcing.</p>
+            <a class="btn btn-accent" href="https://cal.com/fershocastro/30min" data-cal-link="fershocastro/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' target="_blank">Book a Call <span class="arr">&rsaquo;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button class="to-top float-top" type="button" data-top>&uarr; Back to top</button>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span class="mono">© 2026 @Fershocastro. All rights reserved</span>
+      <div class="socials">
+        <a target="_blank" rel="nofollow" href="https://www.linkedin.com/in/fershocastro/">LinkedIn</a>
+        <a target="_blank" rel="nofollow" href="https://twitter.com/Fershocastro">Twitter</a>
+        <a target="_blank" rel="nofollow" href="https://dribbble.com/Fershocastro">Dribbble</a>
+        <a target="_blank" rel="nofollow" href="https://www.behance.net/fershocastro">Behance</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/tech-viz.js"></script>
+  <script src="assets/js/tech-case.js"></script>
+  <script src="assets/js/cal-embed.js"></script>
+  <script src="assets/js/no-context.js"></script>
+</body>
+</html>
